@@ -1,0 +1,27 @@
+name: Validate packs
+on:
+  pull_request:
+    paths:
+      - 'manifest.yml'
+      - 'pages/**'
+  push:
+    branches: [ main ]
+    paths:
+      - 'manifest.yml'
+      - 'pages/**'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          repository: Aharoni-Lab/labki-packs-tools
+          path: tools-cache
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install pyyaml jsonschema
+      - name: Validate manifest
+        run: python tools-cache/tools/validate_repo.py validate-root manifest.yml tools-cache/schema/root-manifest.schema.json
