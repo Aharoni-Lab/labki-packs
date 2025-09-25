@@ -25,12 +25,12 @@ jobs:
         run: pip install pyyaml jsonschema
       - name: Validate manifest
         run: |
-          python tools-cache/tools/validate_repo.py validate-root manifest.yml tools-cache/schema/root-manifest.schema.json
+          python tools-cache/tools/validate_repo.py validate manifest.yml
 ```
 
 Local:
 
 ```bash
 pip install pyyaml jsonschema
-python tools/validate_repo.py validate-root manifest.yml schema/root-manifest.schema.json
+python tools/validate_repo.py validate manifest.yml
 ```
