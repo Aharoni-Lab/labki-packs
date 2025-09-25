@@ -1,6 +1,10 @@
-# Using the validator (from labki-packs-tools)
+# Using the validator (labki-packs-tools)
 
-CI (GitHub Actions):
+Authoritative docs live in `labki-packs-tools`:
+- Validator CLI: [docs/validator.md](https://github.com/Aharoni-Lab/labki-packs-tools/blob/main/docs/validator.md)
+- CI integration: [docs/ci.md](https://github.com/Aharoni-Lab/labki-packs-tools/blob/main/docs/ci.md)
+
+## CI (GitHub Actions)
 
 ```yaml
 name: Validate content packs
@@ -25,12 +29,16 @@ jobs:
         run: pip install pyyaml jsonschema
       - name: Validate manifest
         run: |
+          # auto schema selection
           python tools-cache/tools/validate_repo.py validate manifest.yml
 ```
 
-Local:
+## Local
 
 ```bash
 pip install pyyaml jsonschema
-python tools/validate_repo.py validate manifest.yml
+# auto schema selection
+python tools-cache/tools/validate_repo.py validate manifest.yml
 ```
+
+For advanced options and schema details, use the links above.
