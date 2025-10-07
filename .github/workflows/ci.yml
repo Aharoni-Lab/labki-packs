@@ -24,4 +24,4 @@ jobs:
           python-version: '3.11'
       - run: pip install pyyaml jsonschema
       - name: Validate manifest
-        run: python tools-cache/tools/validate_repo.py validate manifest.yml
+        run: python labki_packs_tools.validate_repo validate manifest.yml
