@@ -22,4 +22,5 @@ jobs:
       - name: Validate manifest (auto schema)
         run: |
           # Auto schema selection based on manifest.schema_version
+          export LABKI_SCHEMA_DIR=$GITHUB_WORKSPACE/tools-cache/schema
           python -m labki_packs_tools.validate_repo validate manifest.yml
