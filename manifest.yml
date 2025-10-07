@@ -3,15 +3,14 @@ last_updated: "2025-09-22T00:00:00Z"
 name: "Labki Packs"
 
 pages:
-  Template:Publication:
-    file: pages/Templates/Template_Publication.wiki
+  test_page:
+    file: pages/test_page.wiki
     last_updated: "2025-09-22T00:00:00Z"
- 
+
 packs:
-  publication:
-    description: Templates and forms for managing publications
+  test_pack:
+    description: Test pack
     version: 1.0.0
     pages:
-      - Template:Publication
+      - test_page
     depends_on: []
- 
