@@ -22,6 +22,9 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - run: pip install pyyaml jsonschema
+      - name: Install deps
+        run: pip install ./tools-cache
       - name: Validate manifest
-        run: python labki_packs_tools.validate_repo validate manifest.yml
+        run: |
+          # auto schema selection
+          labki-validate validate manifest.yml
