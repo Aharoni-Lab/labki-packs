@@ -6,6 +6,39 @@ pages:
   test page:
     file: pages/test page.wiki
     last_updated: "2025-09-22T00:00:00Z"
+  alpha page:
+    file: pages/alpha page.wiki
+    last_updated: "2025-09-22T00:00:00Z"
+  beta page:
+    file: pages/beta page.wiki
+    last_updated: "2025-09-22T00:00:00Z"
+  gamma page:
+    file: pages/gamma page.wiki
+    last_updated: "2025-09-22T00:00:00Z"
+  delta page:
+    file: pages/delta page.wiki
+    last_updated: "2025-09-22T00:00:00Z"
+  epsilon page:
+    file: pages/epsilon page.wiki
+    last_updated: "2025-09-22T00:00:00Z"
+  chain base page:
+    file: pages/chain base page.wiki
+    last_updated: "2025-09-22T00:00:00Z"
+  chain mid page:
+    file: pages/chain mid page.wiki
+    last_updated: "2025-09-22T00:00:00Z"
+  chain top page:
+    file: pages/chain top page.wiki
+    last_updated: "2025-09-22T00:00:00Z"
+  pages only page 1:
+    file: pages/pages only page 1.wiki
+    last_updated: "2025-09-22T00:00:00Z"
+  pages only page 2:
+    file: pages/pages only page 2.wiki
+    last_updated: "2025-09-22T00:00:00Z"
+  standalone page:
+    file: pages/standalone page.wiki
+    last_updated: "2025-09-22T00:00:00Z"
 
 packs:
   test pack:
@@ -14,3 +47,57 @@ packs:
     pages:
       - test page
     depends_on: []
+  pages only pack:
+    description: Pack that only contains pages and no dependencies
+    version: 1.0.0
+    pages:
+      - pages only page 1
+      - pages only page 2
+    depends_on: []
+
+  standalone pack:
+    description: Pack that no other packs depend on
+    version: 1.0.0
+    pages:
+      - standalone page
+    depends_on: []
+
+  dependent pack:
+    description: Has its own pages and depends on another pack
+    version: 1.0.0
+    pages:
+      - alpha page
+    depends_on:
+      - pages only pack
+
+  multi dependency pack:
+    description: Depends on multiple packs
+    version: 1.0.0
+    pages:
+      - beta page
+    depends_on:
+      - pages only pack
+      - test pack
+
+  base chain pack:
+    description: Base of a dependency chain
+    version: 1.0.0
+    pages:
+      - chain base page
+    depends_on: []
+
+  mid chain pack:
+    description: Depends on base chain pack
+    version: 1.0.0
+    pages:
+      - chain mid page
+    depends_on:
+      - base chain pack
+
+  top chain pack:
+    description: Depends on mid chain pack which depends on base chain pack
+    version: 1.0.0
+    pages:
+      - chain top page
+    depends_on:
+      - mid chain pack
