@@ -1,2 +1,29 @@
-Chain top page placeholder
+= Chain Top Page =
+
+This page is the top level in a three-level dependency chain. It depends on [[chain mid page]], which in turn depends on [[chain base page]].
+
+== Overview ==
+
+The chain top page represents the highest level of abstraction in the dependency chain. It builds upon both [[chain base page]] and [[chain mid page]] to provide complete functionality.
+
+== Chain Hierarchy ==
+
+This page is at the top of the following dependency chain:
+* [[chain base page]] - foundation level
+* [[chain mid page]] - intermediate level
+* [[chain top page]] - this page (top level)
+
+== Complete Implementation ==
+
+This page provides the complete implementation that incorporates all the concepts from [[chain base page]] and the intermediate functionality from [[chain mid page]]. It represents the final, fully-featured component in the chain.
+
+== Complex Dependencies ==
+
+This page depends on:
+* [[chain mid page]] - for intermediate functionality
+* [[chain base page]] - indirectly through chain mid page
+
+== Testing Complex Chains ==
+
+This page tests the import system's ability to handle complex dependency chains where pages depend on other pages that in turn depend on additional pages. The import order must be: chain base → chain mid → chain top.
 

@@ -1,2 +1,24 @@
-Standalone page placeholder
+= Standalone Page =
+
+This page is completely independent and has no dependencies on other packs or pages. It serves as a control case for testing the import system.
+
+== Overview ==
+
+The standalone page demonstrates how pages can exist independently without any external dependencies. It is part of the standalone pack which no other packs depend on.
+
+== Independence ==
+
+This page has no dependencies and no other pages depend on it. It contains self-contained functionality that doesn't reference any other pages in the system.
+
+== Self-Contained Content ==
+
+All the information needed to understand this page is contained within the page itself. This makes it ideal for testing basic import functionality without the complexity of dependency resolution.
+
+== Testing Value ==
+
+This page serves as a baseline for testing the import system. It can be imported without any additional dependencies and provides a simple case for verifying that basic import and link rewriting functionality works correctly.
+
+== Content ==
+
+This page contains standalone content that demonstrates various wiki features without requiring links to other pages. It serves as a reference for how pages should be structured when they don't have dependencies.
 

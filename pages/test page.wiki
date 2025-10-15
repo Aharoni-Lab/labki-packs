@@ -1,1 +1,18 @@
-Test wiki text for test_page.wiki
+= Test Page =
+
+This is a test page that serves as the foundation for the test pack. It contains basic information and serves as a dependency for other packs.
+
+== Overview ==
+
+The test page provides fundamental concepts that are referenced by other pages in the system. This page is specifically used by the [[multi dependency pack]] which depends on both this page and the pages from the [[pages only pack]].
+
+== Related Pages ==
+
+This page is referenced by:
+* [[beta page]] - part of the multi dependency pack
+* [[pages only page 1]] - part of the pages only pack
+* [[pages only page 2]] - part of the pages only pack
+
+== Content ==
+
+This page contains essential test data and procedures that other components in the system rely on for proper functionality. When importing this pack, users may rename it to better fit their wiki structure.

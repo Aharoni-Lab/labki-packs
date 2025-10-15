@@ -1,2 +1,22 @@
-Alpha page placeholder
+= Alpha Page =
+
+This page is part of the dependent pack, which depends on the [[pages only pack]]. It demonstrates how pages can have dependencies on other packs.
+
+== Overview ==
+
+The alpha page builds upon the foundation provided by the pages only pack. It specifically references content from [[pages only page 1]] and [[pages only page 2]].
+
+== Dependencies ==
+
+This page depends on:
+* [[pages only page 1]] - provides core functionality
+* [[pages only page 2]] - provides extended features
+
+== Functionality ==
+
+This page extends the capabilities of the pages only pack by adding alpha-specific features. It demonstrates how a dependent pack can build upon existing functionality while adding its own unique value.
+
+== Usage ==
+
+When importing the dependent pack, users must also import the pages only pack first, or the links to [[pages only page 1]] and [[pages only page 2]] will be broken. This tests the dependency resolution functionality of the import system.
 

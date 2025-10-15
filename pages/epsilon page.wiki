@@ -1,2 +1,24 @@
-Epsilon page placeholder
+= Epsilon Page =
+
+This page is currently not assigned to any pack in the manifest. It completes the set of orphaned pages that can be used for comprehensive testing of the import system.
+
+== Overview ==
+
+The epsilon page is the third orphaned page in the system, providing additional flexibility for testing various import scenarios and edge cases.
+
+== Testing Capabilities ==
+
+This page can be used to test:
+* Complex link rewriting scenarios
+* Manual page import functionality
+* Orphaned page handling
+* Import system robustness
+
+== Content ==
+
+This page contains placeholder content that can be expanded to test various wiki features and import scenarios. It serves as a comprehensive test case for the import system's ability to handle pages outside of pack structures.
+
+== Integration ==
+
+While not part of any pack, this page could potentially be linked to by other pages to test cross-pack linking scenarios and complex dependency resolution.
 

@@ -1,2 +1,27 @@
-Gamma page placeholder
+= Gamma Page =
+
+This page is currently not assigned to any pack in the manifest. It serves as an example of an orphaned page that could be used for testing edge cases.
+
+== Overview ==
+
+The gamma page exists in the pages directory but is not referenced by any pack in the manifest.yml file. This makes it an orphaned page that could be used to test various scenarios.
+
+== Orphaned Status ==
+
+This page is not currently part of any pack, which means:
+* It won't be included in any pack imports
+* It can be used to test manual page import functionality
+* It serves as a test case for handling pages without pack associations
+
+== Potential Uses ==
+
+This page could be used to test:
+* Manual page imports
+* Link rewriting for pages not in packs
+* Edge cases in the import system
+* Orphaned page handling
+
+== Content ==
+
+This page contains placeholder content that could be expanded to test various wiki features and import scenarios. It serves as a flexible test case for the import system.
 

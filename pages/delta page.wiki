@@ -1,2 +1,24 @@
-Delta page placeholder
+= Delta Page =
+
+This page is currently not assigned to any pack in the manifest. It represents another orphaned page that can be used for testing various import scenarios.
+
+== Overview ==
+
+The delta page, like the gamma page, exists in the pages directory but is not referenced by any pack. This makes it useful for testing edge cases in the import system.
+
+== Testing Scenarios ==
+
+This page can be used to test:
+* Individual page imports outside of pack context
+* Link rewriting for standalone pages
+* Manual page management
+* Import system edge cases
+
+== Flexibility ==
+
+As an orphaned page, this page provides flexibility for testing various scenarios without being constrained by pack dependencies or relationships.
+
+== Content ==
+
+This page contains basic content that can be modified to test different import and link rewriting scenarios. It serves as a versatile test case for the import system.
 

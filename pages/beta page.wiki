@@ -1,2 +1,23 @@
-Beta page placeholder
+= Beta Page =
+
+This page is part of the multi dependency pack, which depends on both the [[test pack]] and the [[pages only pack]]. It demonstrates complex dependency relationships.
+
+== Overview ==
+
+The beta page showcases how a single page can depend on multiple other packs. It references content from [[test page]], [[pages only page 1]], and [[pages only page 2]].
+
+== Multi-Pack Dependencies ==
+
+This page depends on:
+* [[test page]] - from the test pack
+* [[pages only page 1]] - from the pages only pack
+* [[pages only page 2]] - from the pages only pack
+
+== Complex Integration ==
+
+This page integrates functionality from multiple sources, demonstrating how the import system handles complex dependency chains. It combines test procedures from [[test page]] with core functionality from the pages only pack.
+
+== Import Considerations ==
+
+When importing the multi dependency pack, users must ensure that both the test pack and pages only pack are imported first, or all the links will be broken. This tests the system's ability to handle multiple dependency sources.
 
