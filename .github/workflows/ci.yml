@@ -1,4 +1,5 @@
 name: Validate content packs
+
 on:
   pull_request:
     branches: ['**']
@@ -10,17 +11,28 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/checkout@v4
+
+      - name: Checkout validator tools
+        uses: actions/checkout@v4
         with:
           repository: Aharoni-Lab/labki-packs-tools
           path: tools-cache
-      - uses: actions/setup-python@v5
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - name: Install deps
-        run: pip install ./tools-cache
-      - name: Validate manifest (auto schema)
+
+      - name: Install Labki validator
         run: |
-          # Auto schema selection based on manifest.schema_version
+          pip install ./tools-cache
+          # Copy schema files into installed package for runtime discovery
+          site=$(python -c "import site; print(site.getsitepackages()[0])")
+          mkdir -p "$site/labki_packs_tools/schema"
+          cp -r tools-cache/schema/* "$site/labki_packs_tools/schema/"
+
+      - name: Validate manifest
+        run: |
+          # schema_version field inside manifest.yml determines which schema is used
           export LABKI_SCHEMA_DIR=$GITHUB_WORKSPACE/tools-cache/schema
           labki-validate validate manifest.yml --json
