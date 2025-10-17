@@ -1,3 +1,5 @@
+[![Validate content packs](https://github.com/your-org/your-content-repo/actions/workflows/validate.yml/badge.svg)](https://github.com/your-org/your-content-repo/actions/workflows/validate.yml)
+
 # labki-packs (content) – temporary docs
 
 These documents are intended for the `labki-packs` content repository. They are staged here temporarily and should be moved there.
