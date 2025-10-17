@@ -1,4 +1,4 @@
-[![Validate content packs](https://github.com/Aharoni-Lab/labki-packs/actions/workflows/validate.yml/badge.svg)](https://github.com/Aharoni-Lab/labki-packs/actions/workflows/validate.yml)
+[![Validate content packs](https://github.com/Aharoni-Lab/labki-packs/workflows/Validate%20content%20packs/badge.svg)](https://github.com/Aharoni-Lab/labki-packs/actions/workflows/validate.yml)
 
 # labki-packs (content) – temporary docs
 
