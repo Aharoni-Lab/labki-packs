@@ -7,37 +7,37 @@ pages:
     file: pages/test:page.wiki
     last_updated: "2025-09-22T00:00:00Z"
   alpha page:
-    file: pages/alpha page.wiki
+    file: pages/alpha_page.wiki
     last_updated: "2025-09-22T00:00:00Z"
   beta page:
-    file: pages/beta page.wiki
+    file: pages/beta_page.wiki
     last_updated: "2025-09-22T00:00:00Z"
   gamma page:
-    file: pages/gamma page.wiki
+    file: pages/gamma_page.wiki
     last_updated: "2025-09-22T00:00:00Z"
   delta page:
-    file: pages/delta page.wiki
+    file: pages/delta_page.wiki
     last_updated: "2025-09-22T00:00:00Z"
   epsilon page:
-    file: pages/epsilon page.wiki
+    file: pages/epsilon_page.wiki
     last_updated: "2025-09-22T00:00:00Z"
   chain base page:
-    file: pages/chain base page.wiki
+    file: pages/chain_base_page.wiki
     last_updated: "2025-09-22T00:00:00Z"
   chain mid page:
-    file: pages/chain mid page.wiki
+    file: pages/chain_mid_page.wiki
     last_updated: "2025-09-22T00:00:00Z"
   chain top page:
-    file: pages/chain top page.wiki
+    file: pages/chain_top_page.wiki
     last_updated: "2025-09-22T00:00:00Z"
   pages only page 1:
-    file: pages/pages only page 1.wiki
+    file: pages/pages_only_page_1.wiki
     last_updated: "2025-09-22T00:00:00Z"
   pages only page 2:
-    file: pages/pages only page 2.wiki
+    file: pages/pages_only_page_2.wiki
     last_updated: "2025-09-22T00:00:00Z"
   standalone page:
-    file: pages/standalone page.wiki
+    file: pages/standalone_page.wiki
     last_updated: "2025-09-22T00:00:00Z"
 
 packs:
