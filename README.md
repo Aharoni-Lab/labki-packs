@@ -2,7 +2,7 @@
 
 # labki-packs (content) – temporary docs
 
-These documents are intended for the `labki-packs` content repository.
+These documents are intended for the `labki-packs` content repository. 
 
 - See `docs/overview.md` for goals and scope
 - See `docs/repo-structure.md` for the expected layout
