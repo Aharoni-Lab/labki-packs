@@ -4,7 +4,7 @@ name: "Test Branch"
 
 pages:
   test page:
-    file: pages/test page.wiki
+    file: pages/test:page.wiki
     last_updated: "2025-09-22T00:00:00Z"
   alpha page:
     file: pages/alpha page.wiki
