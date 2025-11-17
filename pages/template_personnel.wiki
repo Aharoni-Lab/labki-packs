@@ -1,77 +1,38 @@
+<noinclude>
+{{#template_params:name|role (property=Personnel Role)|email (property=Personnel Email)|start_date (property=Start Date)|status (property=Status)|supervisor (property=Supervisor)|certifications (list;property=Certification)|equipment_authorizations (list;property=Equipment Authorization)|training_records}}
+</noinclude>
 <includeonly>
-{{Infobox
-|title=Personnel Information
-|name={{{name|}}}
-|status={{{status|Active}}}
-|owner={{{supervisor|}}}
-|created_date={{{start_date|}}}
-|last_updated={{{start_date|}}}
-|content=
+{{#set:Personnel Role={{{role|}}}|Personnel Email={{{email|}}}|Start Date={{{start_date|}}}|Supervisor={{{supervisor|}}}|Certification={{{certifications|}}}|Equipment Authorization={{{equipment_authorizations|}}}|Status={{{status|Active}}}|Created Date={{{start_date|}}}|Last Updated={{{start_date|}}}}}
+
 {| class="wikitable"
 |-
-| '''Role:'''
-| {{{role|}}}
+! Name
+| {{{name|}}}
 |-
-| '''Email:'''
-| {{{email|}}}
+! Role
+| [[Personnel Role::{{{role|}}}]]
 |-
-| '''Start Date:'''
-| {{{start_date|}}}
+! Email
+| [[Personnel Email::{{{email|}}}]]
 |-
-| '''Supervisor:'''
-| {{{supervisor|}}}
+! Start Date
+| [[Start Date::{{{start_date|}}}]]
 |-
-| '''Certifications:'''
-| {{{certifications|}}}
+! Status
+| [[Status::{{{status|Active}}}]]
 |-
-| '''Equipment Authorizations:'''
-| {{{equipment_authorizations|}}}
+! Supervisor
+| [[Supervisor::{{{supervisor|}}}]]
 |-
-| '''Training Records:'''
+! Certifications
+| {{#arraymap:{{{certifications|}}}|;|x|[[Certification::x]]}}
+|-
+! Equipment Authorizations
+| {{#arraymap:{{{equipment_authorizations|}}}|;|x|[[Equipment Authorization::x]]}}
+|-
+! Training Records
 | {{{training_records|}}}
 |}
-}}
-{{#set:
-|Personnel Role={{{role|}}}
-|Personnel Email={{{email|}}}
-|Start Date={{{start_date|}}}
-|Supervisor={{{supervisor|}}}
-|Certification={{{certifications|}}}
-|Equipment Authorization={{{equipment_authorizations|}}}
-|Status={{{status|Active}}}
-|Created Date={{{start_date|}}}
-|Last Updated={{{start_date|}}}
-}}
+
 [[Category:Personnel]]
 </includeonly>
-<noinclude>
-Template for displaying personnel information in a standardized format.
-
-== Usage ==
-<pre>
-{{Personnel
-|name=Jane Smith
-|role=Postdoc
-|email=jane.smith@lab.edu
-|start_date=2024-01-15
-|status=Active
-|supervisor=[[Personnel:John Doe]]
-|certifications=[[Safety Certification:Biosafety Level 2]]; [[Safety Certification:Radiation Safety]]
-|equipment_authorizations=[[Equipment:Confocal Microscope]]; [[Equipment:Centrifuge]]
-|training_records=Completed cell culture training on 2024-02-01
-}}
-</pre>
-
-== Parameters ==
-* name - Personnel name (required)
-* role - Role (PI, Postdoc, Graduate Student, etc.)
-* email - Email address
-* start_date - Start date (YYYY-MM-DD)
-* status - Status (Active, Inactive, Alumni)
-* supervisor - Link to supervisor's personnel page
-* certifications - Semicolon-separated list of certification links
-* equipment_authorizations - Semicolon-separated list of equipment links
-* training_records - Free text training information
-
-[[Category:Template]]
-</noinclude>

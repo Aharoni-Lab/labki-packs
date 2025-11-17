@@ -1,89 +1,47 @@
+<noinclude>
+{{#template_params:name|type (property=Equipment Type)|manufacturer|model|serial_number|location (property=Equipment Location)|status (property=Status)|owner (property=Owner)|purchase_date (property=Created Date)|cost (property=Equipment Cost)|last_maintenance (property=Last Maintenance Date)|next_calibration (property=Next Calibration Date)}}
+</noinclude>
 <includeonly>
-{{Infobox
-|title=Equipment Information
-|name={{{name|}}}
-|status={{{status|Active}}}
-|owner={{{owner|}}}
-|created_date={{{purchase_date|}}}
-|last_updated={{{last_maintenance|}}}
-|content=
+{{#set:Equipment Type={{{type|}}}|Equipment Location={{{location|}}}|Last Maintenance Date={{{last_maintenance|}}}|Next Calibration Date={{{next_calibration|}}}|Equipment Cost={{{cost|}}}|Status={{{status|Active}}}|Owner={{{owner|}}}|Created Date={{{purchase_date|}}}|Last Updated={{{last_maintenance|}}}}}
+
 {| class="wikitable"
 |-
-| '''Type:'''
-| {{{type|}}}
+! Equipment Name
+| {{{name|}}}
 |-
-| '''Manufacturer:'''
+! Type
+| [[Equipment Type::{{{type|}}}]]
+|-
+! Manufacturer
 | {{{manufacturer|}}}
 |-
-| '''Model:'''
+! Model
 | {{{model|}}}
 |-
-| '''Serial Number:'''
+! Serial Number
 | {{{serial_number|}}}
 |-
-| '''Location:'''
-| {{#if:{{{location|}}}|[[{{{location|}}}]]|{{{location|}}}}}
+! Location
+| [[Equipment Location::{{{location|}}}]]
 |-
-| '''Purchase Date:'''
-| {{{purchase_date|}}}
+! Status
+| [[Status::{{{status|Active}}}]]
 |-
-| '''Cost:'''
-| ${{{cost|}}}
+! Owner
+| [[Owner::{{{owner|}}}]]
 |-
-| '''Last Maintenance:'''
-| {{{last_maintenance|}}}
+! Purchase Date
+| [[Created Date::{{{purchase_date|}}}]]
 |-
-| '''Next Calibration:'''
-| {{{next_calibration|}}}
+! Cost
+| [[Equipment Cost::{{{cost|}}}]]
+|-
+! Last Maintenance Date
+| [[Last Maintenance Date::{{{last_maintenance|}}}]]
+|-
+! Next Calibration Date
+| [[Next Calibration Date::{{{next_calibration|}}}]]
 |}
-}}
-{{#set:
-|Equipment Type={{{type|}}}
-|Equipment Location={{{location|}}}
-|Last Maintenance Date={{{last_maintenance|}}}
-|Next Calibration Date={{{next_calibration|}}}
-|Equipment Cost={{{cost|}}}
-|Status={{{status|Active}}}
-|Owner={{{owner|}}}
-|Created Date={{{purchase_date|}}}
-|Last Updated={{{last_maintenance|}}}
-}}
+
 [[Category:Equipment]]
 </includeonly>
-<noinclude>
-Template for displaying equipment information in a standardized format.
-
-== Usage ==
-<pre>
-{{Equipment
-|name=Confocal Microscope
-|type=Microscope
-|manufacturer=Zeiss
-|model=LSM 980
-|serial_number=SN123456
-|location=Room 201
-|status=Active
-|owner=[[Personnel:Jane Smith]]
-|purchase_date=2023-06-15
-|cost=250000
-|last_maintenance=2025-01-10
-|next_calibration=2025-07-10
-}}
-</pre>
-
-== Parameters ==
-* name - Equipment name (required)
-* type - Equipment type (required)
-* manufacturer - Manufacturer name
-* model - Model number
-* serial_number - Serial number
-* location - Physical location
-* status - Status (Active, Inactive, Archived)
-* owner - Link to personnel page
-* purchase_date - Purchase date (YYYY-MM-DD)
-* cost - Purchase cost (number)
-* last_maintenance - Last maintenance date (YYYY-MM-DD)
-* next_calibration - Next calibration date (YYYY-MM-DD)
-
-[[Category:Template]]
-</noinclude>

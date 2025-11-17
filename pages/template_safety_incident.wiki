@@ -1,93 +1,50 @@
+<noinclude>
+{{#template_params:title|date (property=Incident Date)|type|severity (property=Incident Severity)|location|equipment_involved (list;property=Incident Equipment)|personnel_involved (list;property=Incident Personnel)|protocol_involved (list;property=Incident Protocol)|description|resolution|follow_up_actions|status (property=Status)|reported_by (property=Reported By)}}
+</noinclude>
 <includeonly>
-{{Infobox
-|title=Safety Incident Report
-|name={{{title|}}}
-|status={{{status|Open}}}
-|owner={{{reported_by|}}}
-|created_date={{{date|}}}
-|last_updated={{{date|}}}
-|content=
+{{#set:Incident Date={{{date|}}}|Incident Severity={{{severity|}}}|Incident Equipment={{{equipment_involved|}}}|Incident Personnel={{{personnel_involved|}}}|Incident Protocol={{{protocol_involved|}}}|Status={{{status|Open}}}|Created Date={{{date|}}}|Last Updated={{{date|}}}|Reported By={{{reported_by|}}}}}
+
 {| class="wikitable"
 |-
-| '''Date:'''
-| {{{date|}}}
+! Incident Title
+| {{{title|}}}
 |-
-| '''Type:'''
+! Date
+| [[Incident Date::{{{date|}}}]]
+|-
+! Type
 | {{{type|}}}
 |-
-| '''Severity:'''
-| {{{severity|}}}
+! Severity
+| [[Incident Severity::{{{severity|}}}]]
 |-
-| '''Location:'''
+! Location
 | {{{location|}}}
 |-
-| '''Equipment Involved:'''
-| {{{equipment_involved|}}}
+! Equipment Involved
+| {{#arraymap:{{{equipment_involved|}}}|;|x|[[Incident Equipment::x]]}}
 |-
-| '''Personnel Involved:'''
-| {{{personnel_involved|}}}
+! Personnel Involved
+| {{#arraymap:{{{personnel_involved|}}}|;|x|[[Incident Personnel::x]]}}
 |-
-| '''Protocol Involved:'''
-| {{{protocol_involved|}}}
+! Protocol Involved
+| {{#arraymap:{{{protocol_involved|}}}|;|x|[[Incident Protocol::x]]}}
 |-
-| '''Description:'''
+! Description
 | {{{description|}}}
 |-
-| '''Resolution:'''
+! Resolution
 | {{{resolution|}}}
 |-
-| '''Follow-up Actions:'''
+! Follow-up Actions
 | {{{follow_up_actions|}}}
+|-
+! Status
+| [[Status::{{{status|Open}}}]]
+|-
+! Reported By
+| [[Reported By::{{{reported_by|}}}]]
 |}
-}}
-{{#set:
-|Incident Date={{{date|}}}
-|Incident Severity={{{severity|}}}
-|Incident Equipment={{{equipment_involved|}}}
-|Incident Personnel={{{personnel_involved|}}}
-|Incident Protocol={{{protocol_involved|}}}
-|Status={{{status|Open}}}
-|Created Date={{{date|}}}
-|Last Updated={{{date|}}}
-}}
+
 [[Category:Safety Incident]]
 </includeonly>
-<noinclude>
-Template for displaying safety incident information in a standardized format.
-
-== Usage ==
-<pre>
-{{Safety Incident
-|title=Chemical Spill Incident
-|date=2025-01-15
-|type=Chemical Spill
-|severity=Minor
-|location=Room 201
-|equipment_involved=[[Equipment:Fume Hood]]
-|personnel_involved=[[Personnel:Jane Smith]]
-|protocol_involved=[[Protocol:Chemical Handling]]
-|description=Small spill of ethanol during transfer
-|resolution=Cleaned up immediately, no injuries
-|follow_up_actions=Review chemical handling protocol
-|status=Closed
-|reported_by=[[Personnel:Jane Smith]]
-}}
-</pre>
-
-== Parameters ==
-* title - Incident title (required)
-* date - Incident date (YYYY-MM-DD)
-* type - Incident type (Chemical Spill, Fire, Injury, Equipment Failure, etc.)
-* severity - Severity (Minor, Moderate, Major, Critical)
-* location - Location where incident occurred
-* equipment_involved - Semicolon-separated list of equipment links
-* personnel_involved - Semicolon-separated list of personnel links
-* protocol_involved - Semicolon-separated list of protocol links
-* description - Description of the incident
-* resolution - How the incident was resolved
-* follow_up_actions - Actions taken or planned
-* status - Status (Open, Under Investigation, Closed)
-* reported_by - Link to personnel who reported the incident
-
-[[Category:Template]]
-</noinclude>

@@ -1,79 +1,41 @@
+<noinclude>
+{{#template_params:name|type (property=Certification Type)|issuing_body|issue_date (property=Created Date)|expiry_date (property=Certification Expiry)|validity_period|required_for_equipment (list;property=Required For Equipment)|required_for_protocol|personnel_with_certification|status (property=Status)}}
+</noinclude>
 <includeonly>
-{{Infobox
-|title=Safety Certification
-|name={{{name|}}}
-|status={{{status|Active}}}
-|owner={{{issuing_body|}}}
-|created_date={{{issue_date|}}}
-|last_updated={{{expiry_date|}}}
-|content=
+{{#set:Certification Type={{{type|}}}|Certification Expiry={{{expiry_date|}}}|Required For Equipment={{{required_for_equipment|}}}|Status={{{status|Active}}}|Created Date={{{issue_date|}}}|Last Updated={{{expiry_date|}}}}}
+
 {| class="wikitable"
 |-
-| '''Type:'''
-| {{{type|}}}
+! Certification Name
+| {{{name|}}}
 |-
-| '''Issuing Body:'''
+! Type
+| [[Certification Type::{{{type|}}}]]
+|-
+! Issuing Body
 | {{{issuing_body|}}}
 |-
-| '''Issue Date:'''
-| {{{issue_date|}}}
+! Issue Date
+| [[Created Date::{{{issue_date|}}}]]
 |-
-| '''Expiry Date:'''
-| {{{expiry_date|}}}
+! Expiry Date
+| [[Certification Expiry::{{{expiry_date|}}}]]
 |-
-| '''Validity Period:'''
+! Validity Period
 | {{{validity_period|}}}
 |-
-| '''Required For Equipment:'''
-| {{{required_for_equipment|}}}
+! Required For Equipment
+| {{#arraymap:{{{required_for_equipment|}}}|;|x|[[Required For Equipment::x]]}}
 |-
-| '''Required For Protocol:'''
-| {{{required_for_protocol|}}}
+! Required For Protocol
+| {{#arraymap:{{{required_for_protocol|}}}|;|x|[[x]]}}
 |-
-| '''Personnel with Certification:'''
-| {{{personnel_with_certification|}}}
+! Personnel with Certification
+| {{#arraymap:{{{personnel_with_certification|}}}|;|x|[[x]]}}
+|-
+! Status
+| [[Status::{{{status|Active}}}]]
 |}
-}}
-{{#set:
-|Certification Type={{{type|}}}
-|Certification Expiry={{{expiry_date|}}}
-|Required For Equipment={{{required_for_equipment|}}}
-|Status={{{status|Active}}}
-|Created Date={{{issue_date|}}}
-|Last Updated={{{expiry_date|}}}
-}}
+
 [[Category:Safety Certification]]
 </includeonly>
-<noinclude>
-Template for displaying safety certification information in a standardized format.
-
-== Usage ==
-<pre>
-{{Safety Certification
-|name=Biosafety Level 2
-|type=Biosafety
-|issuing_body=Institutional Biosafety Committee
-|issue_date=2024-01-15
-|expiry_date=2026-01-15
-|validity_period=2 years
-|required_for_equipment=[[Equipment:Confocal Microscope]]
-|required_for_protocol=[[Protocol:Cell Culture Protocol]]
-|personnel_with_certification=[[Personnel:Jane Smith]]; [[Personnel:John Doe]]
-|status=Active
-}}
-</pre>
-
-== Parameters ==
-* name - Certification name (required)
-* type - Certification type (Biosafety, Radiation Safety, Chemical Safety, etc.)
-* issuing_body - Organization that issued the certification
-* issue_date - Issue date (YYYY-MM-DD)
-* expiry_date - Expiry date (YYYY-MM-DD)
-* validity_period - How long the certification is valid
-* required_for_equipment - Semicolon-separated list of equipment links
-* required_for_protocol - Semicolon-separated list of protocol links
-* personnel_with_certification - Semicolon-separated list of personnel links
-* status - Status (Active, Expired, Revoked)
-
-[[Category:Template]]
-</noinclude>
