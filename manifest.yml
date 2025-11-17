@@ -1,5 +1,5 @@
 ﻿schema_version: "1.0.0"
-last_updated: "2025-11-16T18:48:53Z"
+last_updated: "2025-11-16T20:18:39Z"
 name: "Labki Packs"
 
 pages:
@@ -171,6 +171,27 @@ pages:
   Compliance Status:
     file: pages/compliance_status.wiki
     last_updated: "2025-11-16T18:48:53Z"
+  Template:Lab Room:
+    file: pages/template_lab_room.wiki
+    last_updated: "2025-11-16T20:18:39Z"
+  Form:Lab Room:
+    file: pages/form_lab_room.wiki
+    last_updated: "2025-11-16T20:18:39Z"
+  Category:Lab Room:
+    file: pages/category_lab_room.wiki
+    last_updated: "2025-11-16T20:18:39Z"
+  Property:Room Number:
+    file: pages/property_room_number.wiki
+    last_updated: "2025-11-16T20:18:39Z"
+  Property:Building:
+    file: pages/property_building.wiki
+    last_updated: "2025-11-16T20:18:39Z"
+  Property:Floor:
+    file: pages/property_floor.wiki
+    last_updated: "2025-11-16T20:18:39Z"
+  Property:Room Capacity:
+    file: pages/property_room_capacity.wiki
+    last_updated: "2025-11-16T20:18:39Z"
 
 packs:
   core-infrastructure:
@@ -183,6 +204,13 @@ packs:
       - Property:Status
       - Property:Owner
       - Property:Created Date
+      - Template:Lab Room
+      - Form:Lab Room
+      - Category:Lab Room
+      - Property:Room Number
+      - Property:Building
+      - Property:Floor
+      - Property:Room Capacity
     depends_on: []
   equipment-management:
     description: Track lab equipment, maintenance schedules, calibration, and usage

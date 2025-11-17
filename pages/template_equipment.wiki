@@ -22,7 +22,7 @@
 | {{{serial_number|}}}
 |-
 | '''Location:'''
-| {{{location|}}}
+| {{#if:{{{location|}}}|[[{{{location|}}}]]|{{{location|}}}}}
 |-
 | '''Purchase Date:'''
 | {{{purchase_date|}}}

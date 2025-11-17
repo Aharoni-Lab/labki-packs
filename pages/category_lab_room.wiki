@@ -1,0 +1,7 @@
+This category contains all lab room and location pages.
+
+== See Also ==
+* [[Category:Equipment]]
+* [[Equipment Dashboard]]
+
+[[Category:Lab Content]]

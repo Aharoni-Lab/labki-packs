@@ -1,0 +1,18 @@
+<includeonly>{{#set:
+|Has type=String
+}}</includeonly>
+<noinclude>
+This property stores the room number.
+
+== Type ==
+String
+
+== Usage ==
+<pre>
+{{#set:
+|Room Number=201
+}}
+</pre>
+
+[[Category:Property]]
+</noinclude>

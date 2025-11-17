@@ -1,16 +1,17 @@
 <includeonly>{{#set:
-|Has type=String
+|Has type=Page
+|Allows value=Category:Lab Room
 }}</includeonly>
 <noinclude>
-This property stores the physical location of equipment.
+This property links to the lab room page where equipment is located.
 
 == Type ==
-String
+Page (links to Lab Room pages)
 
 == Usage ==
 <pre>
 {{#set:
-|Equipment Location=Room 201
+|Equipment Location=[[Lab Room:Room 201]]
 }}
 </pre>
 

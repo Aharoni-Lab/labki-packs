@@ -11,7 +11,7 @@ if a page with that name already exists, you will be editing that page.
 {{{field|manufacturer|label=Manufacturer|input type=text|size=50}}}
 {{{field|model|label=Model|input type=text|size=50}}}
 {{{field|serial_number|label=Serial Number|input type=text|size=50}}}
-{{{field|location|mandatory|label=Location|input type=text|size=50|hint=Room number or location}}}
+{{{field|location|mandatory|label=Location|input type=combobox|values from category=Lab Room|autocomplete on property=Room Number|hint=Select lab room from list or type to search}}}
 {{{field|status|mandatory|label=Status|input type=dropdown|values=Active,Inactive,Archived|default=Active}}}
 {{{field|owner|label=Owner|input type=combobox|values from category=Personnel|autocomplete on property=Personnel Role}}}
 {{{field|purchase_date|label=Purchase Date|input type=date|mandatory}}

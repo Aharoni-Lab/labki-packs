@@ -13,7 +13,7 @@ if a page with that name already exists, you will be editing that page.
 {{{field|status|mandatory|label=Status|input type=dropdown|values=Active,Inactive,Alumni|default=Active}}}
 {{{field|supervisor|label=Supervisor|input type=combobox|values from category=Personnel|autocomplete on property=Personnel Role|hint=Select supervisor from personnel list}}}
 {{{field|certifications|label=Certifications|input type=checkboxes|values from category=Safety Certification|delimiter=;|hint=Select all certifications held}}}
-{{{field|equipment_authorizations|label=Equipment Authorizations|input type=checkboxes|values from category=Equipment|delimiter=;|hint=Select all equipment this person is authorized to use}}}
+{{{field|equipment_authorizations|label=Equipment Authorizations|input type=checkboxes|values from category=Equipment|delimiter=;|hint=Select all equipment this person is authorized to use (populated from equipment created via Equipment form)}}}
 {{{field|training_records|label=Training Records|input type=textarea|rows=5|hint=Enter training information and dates}}}
 {{{standard input|free text|rows=10|label=Additional Notes}}}
 {{{standard input|summary}}}
