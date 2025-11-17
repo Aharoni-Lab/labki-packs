@@ -1,25 +1,52 @@
 <noinclude>
-This is the "Lab Room" form. To create a page with this form, enter the page name below;
-if a page with that name already exists, you will be editing that page.
+This is the "Lab Room" form.
 
-{{#forminput:form=Lab Room|size=50|button text=Create or edit lab room}}
+To create a page with this form, enter the page name below;
+if a page with that name already exists, you will be sent to a form to edit that page.
+
+{{#forminput:form=Lab Room|autocomplete on category=Lab Room}}
 </noinclude>
 <includeonly>
+<div id="wikiPreview" style="display: none; padding-bottom: 25px; margin-bottom: 25px; border-bottom: 1px solid #AAAAAA;"></div>
+
 {{{for template|Lab Room}}}
-{{{field|name|mandatory|label=Room Name|input type=text|size=50|hint=e.g., Room 201}}}
-{{{field|room_number|mandatory|label=Room Number|input type=text|size=20}}}
-{{{field|building|label=Building|input type=text|size=50}}}
-{{{field|floor|label=Floor|input type=number|size=10}}}
-{{{field|capacity|label=Capacity|input type=number|size=10|hint=Maximum occupancy}}}
-{{{field|manager|label=Manager|input type=combobox|values from category=Personnel|autocomplete on property=Personnel Role}}}
-{{{field|description|label=Description|input type=textarea|rows=5|hint=Description of the room and its purpose}}}
-{{{field|status|mandatory|label=Status|input type=dropdown|values=Active,Inactive,Under Renovation|default=Active}}}
-{{{field|created_date|label=Created Date|input type=date}}}
-{{{field|last_updated|label=Last Updated|input type=date}}}
-{{{standard input|free text|rows=10|label=Additional Notes}}}
-{{{standard input|summary}}}
-{{{standard input|save}}}
-{{{standard input|preview}}}
-{{{standard input|changes}}}
-{{{standard input|cancel}}}
+
+{| class="formtable"
+|-
+! Room Name:
+| {{{field|name|mandatory|input type=text|size=50}}}
+|-
+! Room Number:
+| {{{field|room_number|mandatory|input type=text|size=20}}}
+|-
+! Building:
+| {{{field|building|input type=text|size=50}}}
+|-
+! Floor:
+| {{{field|floor|input type=number|size=10}}}
+|-
+! Capacity:
+| {{{field|capacity|input type=number|size=10}}}
+|-
+! Manager:
+| {{{field|manager|input type=combobox|values from category=Personnel|autocomplete on property=Personnel Role}}}
+|-
+! Description:
+| {{{field|description|input type=textarea|rows=5}}}
+|-
+! Status:
+| {{{field|status|mandatory|input type=dropdown|values=Active,Inactive,Under Renovation|default=Active}}}
+|-
+! Created Date:
+| {{{field|created_date|input type=date}}}
+|-
+! Last Updated:
+| {{{field|last_updated|input type=date}}}
+|}
+
+{{{end template}}}
+
+'''Free text:'''
+
+{{{standard input|free text|rows=10}}}
 </includeonly>
