@@ -1,0 +1,19 @@
+<includeonly>{{#set:
+|Has type=Page
+|Allows value=Category:Personnel
+}}</includeonly>
+<noinclude>
+This property links to the personnel page of the protocol author.
+
+== Type ==
+Page (links to Personnel pages)
+
+== Usage ==
+<pre>
+{{#set:
+|Protocol Author=[[Personnel:Jane Smith]]
+}}
+</pre>
+
+[[Category:Property]]
+</noinclude>

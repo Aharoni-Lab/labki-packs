@@ -1,0 +1,83 @@
+<includeonly>
+{{Infobox
+|title=Protocol Information
+|name={{{title|}}}
+|status={{{status|Active}}}
+|owner={{{author|}}}
+|created_date={{{created_date|}}}
+|last_updated={{{last_review_date|}}}
+|content=
+{| class="wikitable"
+|-
+| '''Category:'''
+| {{{category|}}}
+|-
+| '''Version:'''
+| {{{version|1.0}}}
+|-
+| '''Author:'''
+| {{{author|}}}
+|-
+| '''Last Review Date:'''
+| {{{last_review_date|}}}
+|-
+| '''Next Review Date:'''
+| {{{next_review_date|}}}
+|-
+| '''Required Equipment:'''
+| {{{required_equipment|}}}
+|-
+| '''Required Certifications:'''
+| {{{required_certifications|}}}
+|-
+| '''Related Protocols:'''
+| {{{related_protocols|}}}
+|}
+}}
+{{#set:
+|Protocol Version={{{version|1.0}}}
+|Protocol Author={{{author|}}}
+|Last Review Date={{{last_review_date|}}}
+|Required Equipment={{{required_equipment|}}}
+|Required Certification={{{required_certifications|}}}
+|Status={{{status|Active}}}
+|Created Date={{{created_date|}}}
+|Last Updated={{{last_review_date|}}}
+}}
+[[Category:Protocol]]
+</includeonly>
+<noinclude>
+Template for displaying protocol/SOP information in a standardized format.
+
+== Usage ==
+<pre>
+{{Protocol
+|title=Cell Culture Protocol
+|category=Safety
+|version=2.1
+|author=[[Personnel:Jane Smith]]
+|created_date=2024-01-15
+|last_review_date=2025-01-10
+|next_review_date=2026-01-10
+|status=Active
+|required_equipment=[[Equipment:Confocal Microscope]]; [[Equipment:Centrifuge]]
+|required_certifications=[[Safety Certification:Biosafety Level 2]]
+|related_protocols=[[Protocol:Cell Harvesting]]; [[Protocol:Cell Staining]]
+}}
+</pre>
+
+== Parameters ==
+* title - Protocol title (required)
+* category - Protocol category (Safety, Experimental, Maintenance, etc.)
+* version - Version number
+* author - Link to personnel page
+* created_date - Creation date (YYYY-MM-DD)
+* last_review_date - Last review date (YYYY-MM-DD)
+* next_review_date - Next scheduled review date (YYYY-MM-DD)
+* status - Status (Active, Inactive, Under Review)
+* required_equipment - Semicolon-separated list of equipment links
+* required_certifications - Semicolon-separated list of certification links
+* related_protocols - Semicolon-separated list of related protocol links
+
+[[Category:Template]]
+</noinclude>

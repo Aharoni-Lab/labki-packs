@@ -1,0 +1,26 @@
+<includeonly>{{#set:
+|Has type=String
+|Allows value=Active,Inactive,Archived,Pending,Under Review
+}}</includeonly>
+<noinclude>
+This property stores the status of an item (Active, Inactive, Archived, Pending, Under Review).
+
+== Type ==
+String
+
+== Allowed Values ==
+* Active
+* Inactive
+* Archived
+* Pending
+* Under Review
+
+== Usage ==
+<pre>
+{{#set:
+|Status=Active
+}}
+</pre>
+
+[[Category:Property]]
+</noinclude>

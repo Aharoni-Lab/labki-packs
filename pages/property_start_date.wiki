@@ -1,0 +1,19 @@
+<includeonly>{{#set:
+|Has type=Date
+|Allows value=Date
+}}</includeonly>
+<noinclude>
+This property stores the start date for personnel in the lab.
+
+== Type ==
+Date
+
+== Usage ==
+<pre>
+{{#set:
+|Start Date=2024-01-15
+}}
+</pre>
+
+[[Category:Property]]
+</noinclude>

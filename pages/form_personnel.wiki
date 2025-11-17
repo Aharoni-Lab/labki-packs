@@ -1,0 +1,24 @@
+<noinclude>
+This is the "Personnel" form. To create a page with this form, enter the page name below;
+if a page with that name already exists, you will be editing that page.
+
+{{#forminput:form=Personnel|size=50|button text=Create or edit personnel}}
+</noinclude>
+<includeonly>
+{{{for template|Personnel}}}
+{{{field|name|mandatory|label=Name|input type=text|size=50}}}
+{{{field|role|mandatory|label=Role|input type=dropdown|values=PI,Postdoc,Graduate Student,Undergraduate Student,Research Assistant,Technician,Other}}}
+{{{field|email|mandatory|label=Email|input type=email|size=50}}}
+{{{field|start_date|mandatory|label=Start Date|input type=date}}}
+{{{field|status|mandatory|label=Status|input type=dropdown|values=Active,Inactive,Alumni|default=Active}}}
+{{{field|supervisor|label=Supervisor|input type=combobox|values from category=Personnel|autocomplete on property=Personnel Role|hint=Select supervisor from personnel list}}}
+{{{field|certifications|label=Certifications|input type=checkboxes|values from category=Safety Certification|delimiter=;|hint=Select all certifications held}}}
+{{{field|equipment_authorizations|label=Equipment Authorizations|input type=checkboxes|values from category=Equipment|delimiter=;|hint=Select all equipment this person is authorized to use}}}
+{{{field|training_records|label=Training Records|input type=textarea|rows=5|hint=Enter training information and dates}}}
+{{{standard input|free text|rows=10|label=Additional Notes}}}
+{{{standard input|summary}}}
+{{{standard input|save}}}
+{{{standard input|preview}}}
+{{{standard input|changes}}}
+{{{standard input|cancel}}}
+</includeonly>

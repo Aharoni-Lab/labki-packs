@@ -1,0 +1,102 @@
+= Compliance Status =
+
+This page shows compliance status across equipment, personnel, and protocols, demonstrating how safety certifications interconnect with all lab operations.
+
+== Equipment Compliance Status ==
+
+Equipment and their required certifications:
+
+{{#ask:
+[[Category:Equipment]]
+[[Status::Active]]
+|?Required For Equipment
+|?Equipment Authorization
+|format=table
+|link=all
+|headers=plain
+|mainlabel=Equipment
+|order=ASC
+|sort=Equipment Type
+|limit=100
+}}
+
+== Personnel Compliance Status ==
+
+Personnel and their certifications:
+
+{{#ask:
+[[Category:Personnel]]
+[[Status::Active]]
+|?Certification
+|?Equipment Authorization
+|format=table
+|link=all
+|headers=plain
+|mainlabel=Personnel
+|order=ASC
+|sort=Personnel Role
+|limit=100
+}}
+
+== Protocol Compliance Status ==
+
+Protocols and their required certifications:
+
+{{#ask:
+[[Category:Protocol]]
+[[Status::Active]]
+|?Required Certification
+|?Required Equipment
+|format=table
+|link=all
+|headers=plain
+|mainlabel=Protocol
+|order=ASC
+|sort=Protocol
+|limit=100
+}}
+
+== Certification Coverage ==
+
+This shows which certifications are required for which equipment and protocols:
+
+{{#ask:
+[[Category:Safety Certification]]
+[[Status::Active]]
+|?Required For Equipment
+|?Certification Type
+|?Certification Expiry
+|format=table
+|link=all
+|headers=plain
+|mainlabel=Certification
+|order=ASC
+|sort=Certification Type
+|limit=100
+}}
+
+== Compliance Gaps ==
+
+Equipment requiring certifications that may not be held by authorized personnel:
+
+{{#ask:
+[[Category:Equipment]]
+[[Status::Active]]
+|?Required For Equipment
+|?Equipment Authorization
+|format=table
+|link=all
+|headers=plain
+|mainlabel=Equipment
+|order=ASC
+|sort=Equipment Type
+|limit=100
+}}
+
+== See Also ==
+* [[Safety Dashboard]]
+* [[Personnel Training Matrix]]
+* [[Equipment Dashboard]]
+* [[Protocol Index]]
+
+[[Category:Lab Content]]

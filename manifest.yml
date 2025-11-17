@@ -1,103 +1,264 @@
 ﻿schema_version: "1.0.0"
-last_updated: "2025-09-22T00:00:01Z"
+last_updated: "2025-11-16T18:48:53Z"
 name: "Labki Packs"
 
 pages:
-  test page:
-    file: pages/test_page.wiki
-    last_updated: "2025-09-22T00:00:00Z"
-  alpha page:
-    file: pages/alpha_page.wiki
-    last_updated: "2025-09-22T00:00:00Z"
-  beta page:
-    file: pages/beta_page.wiki
-    last_updated: "2025-09-22T00:00:00Z"
-  gamma page:
-    file: pages/gamma_page.wiki
-    last_updated: "2025-09-22T00:00:00Z"
-  delta page:
-    file: pages/delta_page.wiki
-    last_updated: "2025-09-22T00:00:00Z"
-  epsilon page:
-    file: pages/epsilon_page.wiki
-    last_updated: "2025-09-22T00:00:00Z"
-  chain base page:
-    file: pages/chain_base_page.wiki
-    last_updated: "2025-09-22T00:00:00Z"
-  chain mid page:
-    file: pages/chain_mid_page.wiki
-    last_updated: "2025-09-22T00:00:00Z"
-  chain top page:
-    file: pages/chain_top_page.wiki
-    last_updated: "2025-09-22T00:00:00Z"
-  pages only page 1:
-    file: pages/pages_only_page_1.wiki
-    last_updated: "2025-09-22T00:00:00Z"
-  pages only page 2:
-    file: pages/pages_only_page_2.wiki
-    last_updated: "2025-09-22T00:00:00Z"
-  standalone page:
-    file: pages/standalone_page.wiki
-    last_updated: "2025-09-22T00:00:00Z"
+  Template:Infobox:
+    file: pages/template_infobox.wiki
+    last_updated: "2025-11-16T18:48:53Z"
+  Category:Lab Content:
+    file: pages/category_lab_content.wiki
+    last_updated: "2025-11-16T18:48:53Z"
+  Property:Last Updated:
+    file: pages/property_last_updated.wiki
+    last_updated: "2025-11-16T18:48:53Z"
+  Property:Status:
+    file: pages/property_status.wiki
+    last_updated: "2025-11-16T18:48:53Z"
+  Property:Owner:
+    file: pages/property_owner.wiki
+    last_updated: "2025-11-16T18:48:53Z"
+  Property:Created Date:
+    file: pages/property_created_date.wiki
+    last_updated: "2025-11-16T18:48:53Z"
+  Template:Equipment:
+    file: pages/template_equipment.wiki
+    last_updated: "2025-11-16T18:48:53Z"
+  Form:Equipment:
+    file: pages/form_equipment.wiki
+    last_updated: "2025-11-16T18:48:53Z"
+  Category:Equipment:
+    file: pages/category_equipment.wiki
+    last_updated: "2025-11-16T18:48:53Z"
+  Category:Equipment by Type:
+    file: pages/category_equipment_by_type.wiki
+    last_updated: "2025-11-16T18:48:53Z"
+  Property:Equipment Type:
+    file: pages/property_equipment_type.wiki
+    last_updated: "2025-11-16T18:48:53Z"
+  Property:Equipment Location:
+    file: pages/property_equipment_location.wiki
+    last_updated: "2025-11-16T18:48:53Z"
+  Property:Last Maintenance Date:
+    file: pages/property_last_maintenance_date.wiki
+    last_updated: "2025-11-16T18:48:53Z"
+  Property:Next Calibration Date:
+    file: pages/property_next_calibration_date.wiki
+    last_updated: "2025-11-16T18:48:53Z"
+  Property:Equipment Cost:
+    file: pages/property_equipment_cost.wiki
+    last_updated: "2025-11-16T18:48:53Z"
+  Equipment Dashboard:
+    file: pages/equipment_dashboard.wiki
+    last_updated: "2025-11-16T18:48:53Z"
+  Equipment Maintenance Schedule:
+    file: pages/equipment_maintenance_schedule.wiki
+    last_updated: "2025-11-16T18:48:53Z"
+  Template:Protocol:
+    file: pages/template_protocol.wiki
+    last_updated: "2025-11-16T18:48:53Z"
+  Form:Protocol:
+    file: pages/form_protocol.wiki
+    last_updated: "2025-11-16T18:48:53Z"
+  Category:Protocol:
+    file: pages/category_protocol.wiki
+    last_updated: "2025-11-16T18:48:53Z"
+  Category:Protocol by Type:
+    file: pages/category_protocol_by_type.wiki
+    last_updated: "2025-11-16T18:48:53Z"
+  Property:Protocol Version:
+    file: pages/property_protocol_version.wiki
+    last_updated: "2025-11-16T18:48:53Z"
+  Property:Protocol Author:
+    file: pages/property_protocol_author.wiki
+    last_updated: "2025-11-16T18:48:53Z"
+  Property:Last Review Date:
+    file: pages/property_last_review_date.wiki
+    last_updated: "2025-11-16T18:48:53Z"
+  Property:Required Equipment:
+    file: pages/property_required_equipment.wiki
+    last_updated: "2025-11-16T18:48:53Z"
+  Property:Required Certification:
+    file: pages/property_required_certification.wiki
+    last_updated: "2025-11-16T18:48:53Z"
+  Protocol Index:
+    file: pages/protocol_index.wiki
+    last_updated: "2025-11-16T18:48:53Z"
+  Protocol by Equipment:
+    file: pages/protocol_by_equipment.wiki
+    last_updated: "2025-11-16T18:48:53Z"
+  Template:Personnel:
+    file: pages/template_personnel.wiki
+    last_updated: "2025-11-16T18:48:53Z"
+  Form:Personnel:
+    file: pages/form_personnel.wiki
+    last_updated: "2025-11-16T18:48:53Z"
+  Category:Personnel:
+    file: pages/category_personnel.wiki
+    last_updated: "2025-11-16T18:48:53Z"
+  Category:Personnel by Role:
+    file: pages/category_personnel_by_role.wiki
+    last_updated: "2025-11-16T18:48:53Z"
+  Property:Personnel Role:
+    file: pages/property_personnel_role.wiki
+    last_updated: "2025-11-16T18:48:53Z"
+  Property:Personnel Email:
+    file: pages/property_personnel_email.wiki
+    last_updated: "2025-11-16T18:48:53Z"
+  Property:Start Date:
+    file: pages/property_start_date.wiki
+    last_updated: "2025-11-16T18:48:53Z"
+  Property:Supervisor:
+    file: pages/property_supervisor.wiki
+    last_updated: "2025-11-16T18:48:53Z"
+  Property:Equipment Authorization:
+    file: pages/property_equipment_authorization.wiki
+    last_updated: "2025-11-16T18:48:53Z"
+  Property:Certification:
+    file: pages/property_certification.wiki
+    last_updated: "2025-11-16T18:48:53Z"
+  Personnel Directory:
+    file: pages/personnel_directory.wiki
+    last_updated: "2025-11-16T18:48:53Z"
+  Personnel Training Matrix:
+    file: pages/personnel_training_matrix.wiki
+    last_updated: "2025-11-16T18:48:53Z"
+  Template:Safety Incident:
+    file: pages/template_safety_incident.wiki
+    last_updated: "2025-11-16T18:48:53Z"
+  Template:Safety Certification:
+    file: pages/template_safety_certification.wiki
+    last_updated: "2025-11-16T18:48:53Z"
+  Form:Safety Incident:
+    file: pages/form_safety_incident.wiki
+    last_updated: "2025-11-16T18:48:53Z"
+  Form:Safety Certification:
+    file: pages/form_safety_certification.wiki
+    last_updated: "2025-11-16T18:48:53Z"
+  Category:Safety Incident:
+    file: pages/category_safety_incident.wiki
+    last_updated: "2025-11-16T18:48:53Z"
+  Category:Safety Certification:
+    file: pages/category_safety_certification.wiki
+    last_updated: "2025-11-16T18:48:53Z"
+  Property:Incident Date:
+    file: pages/property_incident_date.wiki
+    last_updated: "2025-11-16T18:48:53Z"
+  Property:Incident Severity:
+    file: pages/property_incident_severity.wiki
+    last_updated: "2025-11-16T18:48:53Z"
+  Property:Incident Equipment:
+    file: pages/property_incident_equipment.wiki
+    last_updated: "2025-11-16T18:48:53Z"
+  Property:Incident Personnel:
+    file: pages/property_incident_personnel.wiki
+    last_updated: "2025-11-16T18:48:53Z"
+  Property:Incident Protocol:
+    file: pages/property_incident_protocol.wiki
+    last_updated: "2025-11-16T18:48:53Z"
+  Property:Certification Type:
+    file: pages/property_certification_type.wiki
+    last_updated: "2025-11-16T18:48:53Z"
+  Property:Certification Expiry:
+    file: pages/property_certification_expiry.wiki
+    last_updated: "2025-11-16T18:48:53Z"
+  Property:Required For Equipment:
+    file: pages/property_required_for_equipment.wiki
+    last_updated: "2025-11-16T18:48:53Z"
+  Safety Dashboard:
+    file: pages/safety_dashboard.wiki
+    last_updated: "2025-11-16T18:48:53Z"
+  Compliance Status:
+    file: pages/compliance_status.wiki
+    last_updated: "2025-11-16T18:48:53Z"
 
 packs:
-  test pack:
-    description: Test pack
+  core-infrastructure:
+    description: Base pack providing shared SMW properties, common templates, and base categories that other packs depend on
     version: 1.0.0
     pages:
-      - test page
+      - Template:Infobox
+      - Category:Lab Content
+      - Property:Last Updated
+      - Property:Status
+      - Property:Owner
+      - Property:Created Date
     depends_on: []
-  pages only pack:
-    description: Pack that only contains pages and no dependencies
+  equipment-management:
+    description: Track lab equipment, maintenance schedules, calibration, and usage
     version: 1.0.0
     pages:
-      - pages only page 1
-      - pages only page 2
-    depends_on: []
-
-  standalone pack:
-    description: Pack that no other packs depend on
-    version: 1.0.0
-    pages:
-      - standalone page
-    depends_on: []
-
-  dependent pack:
-    description: Has its own pages and depends on another pack
-    version: 1.0.0
-    pages:
-      - alpha page
+      - Template:Equipment
+      - Form:Equipment
+      - Category:Equipment
+      - Category:Equipment by Type
+      - Property:Equipment Type
+      - Property:Equipment Location
+      - Property:Last Maintenance Date
+      - Property:Next Calibration Date
+      - Property:Equipment Cost
+      - Equipment Dashboard
+      - Equipment Maintenance Schedule
     depends_on:
-      - pages only pack
-
-  multi dependency pack:
-    description: Depends on multiple packs
+      - core-infrastructure
+  protocol-management:
+    description: Manage standard operating procedures, protocols, and link them to equipment and personnel
     version: 1.0.0
     pages:
-      - beta page
+      - Template:Protocol
+      - Form:Protocol
+      - Category:Protocol
+      - Category:Protocol by Type
+      - Property:Protocol Version
+      - Property:Protocol Author
+      - Property:Last Review Date
+      - Property:Required Equipment
+      - Property:Required Certification
+      - Protocol Index
+      - Protocol by Equipment
     depends_on:
-      - pages only pack
-      - test pack
-
-  base chain pack:
-    description: Base of a dependency chain
+      - core-infrastructure
+      - equipment-management
+  personnel-management:
+    description: Track lab members, roles, training, certifications, and equipment authorizations
     version: 1.0.0
     pages:
-      - chain base page
-    depends_on: []
-
-  mid chain pack:
-    description: Depends on base chain pack
-    version: 1.0.0
-    pages:
-      - chain mid page
+      - Template:Personnel
+      - Form:Personnel
+      - Category:Personnel
+      - Category:Personnel by Role
+      - Property:Personnel Role
+      - Property:Personnel Email
+      - Property:Start Date
+      - Property:Supervisor
+      - Property:Equipment Authorization
+      - Property:Certification
+      - Personnel Directory
+      - Personnel Training Matrix
     depends_on:
-      - base chain pack
-
-  top chain pack:
-    description: Depends on mid chain pack which depends on base chain pack
+      - core-infrastructure
+  safety-compliance:
+    description: Track safety incidents, compliance checks, certifications, and link to equipment, protocols, and personnel
     version: 1.0.0
     pages:
-      - chain top page
+      - Template:Safety Incident
+      - Template:Safety Certification
+      - Form:Safety Incident
+      - Form:Safety Certification
+      - Category:Safety Incident
+      - Category:Safety Certification
+      - Property:Incident Date
+      - Property:Incident Severity
+      - Property:Incident Equipment
+      - Property:Incident Personnel
+      - Property:Incident Protocol
+      - Property:Certification Type
+      - Property:Certification Expiry
+      - Property:Required For Equipment
+      - Safety Dashboard
+      - Compliance Status
     depends_on:
-      - mid chain pack
+      - core-infrastructure
+      - equipment-management
+      - protocol-management
+      - personnel-management

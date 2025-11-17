@@ -1,0 +1,19 @@
+<includeonly>{{#set:
+|Has type=Date
+|Allows value=Date
+}}</includeonly>
+<noinclude>
+This property stores the expiry date of a safety certification.
+
+== Type ==
+Date
+
+== Usage ==
+<pre>
+{{#set:
+|Certification Expiry=2026-01-15
+}}
+</pre>
+
+[[Category:Property]]
+</noinclude>

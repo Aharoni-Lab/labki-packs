@@ -1,0 +1,19 @@
+<includeonly>{{#set:
+|Has type=Page
+|Allows value=Category:Personnel
+}}</includeonly>
+<noinclude>
+This property links to the supervisor's personnel page.
+
+== Type ==
+Page (links to Personnel pages)
+
+== Usage ==
+<pre>
+{{#set:
+|Supervisor=[[Personnel:John Doe]]
+}}
+</pre>
+
+[[Category:Property]]
+</noinclude>

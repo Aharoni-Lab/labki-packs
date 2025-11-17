@@ -1,0 +1,26 @@
+<noinclude>
+This is the "Protocol" form. To create a page with this form, enter the page name below;
+if a page with that name already exists, you will be editing that page.
+
+{{#forminput:form=Protocol|size=50|button text=Create or edit protocol}}
+</noinclude>
+<includeonly>
+{{{for template|Protocol}}}
+{{{field|title|mandatory|label=Protocol Title|input type=text|size=80}}}
+{{{field|category|mandatory|label=Category|input type=dropdown|values=Safety,Experimental,Maintenance,Quality Control,Data Analysis,Other}}}
+{{{field|version|mandatory|label=Version|input type=text|size=20|default=1.0|hint=Semantic version (e.g., 1.0, 2.1)}}}
+{{{field|author|mandatory|label=Author|input type=combobox|values from category=Personnel|autocomplete on property=Personnel Role}}}
+{{{field|created_date|label=Created Date|input type=date|mandatory}}
+{{{field|last_review_date|label=Last Review Date|input type=date|mandatory}}
+{{{field|next_review_date|label=Next Review Date|input type=date|mandatory}}
+{{{field|status|mandatory|label=Status|input type=dropdown|values=Active,Inactive,Under Review|default=Active}}}
+{{{field|required_equipment|label=Required Equipment|input type=checkboxes|values from category=Equipment|delimiter=;|hint=Select all equipment needed for this protocol}}}
+{{{field|required_certifications|label=Required Certifications|input type=checkboxes|values from category=Safety Certification|delimiter=;|hint=Select all certifications required}}}
+{{{field|related_protocols|label=Related Protocols|input type=checkboxes|values from category=Protocol|delimiter=;|hint=Select related protocols}}}
+{{{standard input|free text|rows=15|label=Protocol Content|mandatory|hint=Enter the full protocol text here}}}
+{{{standard input|summary}}}
+{{{standard input|save}}}
+{{{standard input|preview}}}
+{{{standard input|changes}}}
+{{{standard input|cancel}}}
+</includeonly>

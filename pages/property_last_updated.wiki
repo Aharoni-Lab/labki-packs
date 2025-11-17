@@ -1,0 +1,20 @@
+<includeonly>{{#set:
+|Has type=Date
+|Allows value=Date
+}}</includeonly>
+<noinclude>
+This property stores the last update date for a page.
+
+== Type ==
+Date
+
+== Usage ==
+Use this property to track when a page was last modified:
+<pre>
+{{#set:
+|Last Updated=2025-01-20
+}}
+</pre>
+
+[[Category:Property]]
+</noinclude>

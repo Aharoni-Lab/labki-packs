@@ -1,0 +1,28 @@
+<noinclude>
+This is the "Safety Incident" form. To create a page with this form, enter the page name below;
+if a page with that name already exists, you will be editing that page.
+
+{{#forminput:form=Safety Incident|size=50|button text=Create or edit safety incident}}
+</noinclude>
+<includeonly>
+{{{for template|Safety Incident}}}
+{{{field|title|mandatory|label=Incident Title|input type=text|size=80}}}
+{{{field|date|mandatory|label=Incident Date|input type=date}}}
+{{{field|type|mandatory|label=Incident Type|input type=dropdown|values=Chemical Spill,Fire,Injury,Equipment Failure,Electrical,Other}}}
+{{{field|severity|mandatory|label=Severity|input type=dropdown|values=Minor,Moderate,Major,Critical}}}
+{{{field|location|mandatory|label=Location|input type=text|size=50|hint=Room number or location}}}
+{{{field|equipment_involved|label=Equipment Involved|input type=checkboxes|values from category=Equipment|delimiter=;|hint=Select all equipment involved}}}
+{{{field|personnel_involved|label=Personnel Involved|input type=checkboxes|values from category=Personnel|delimiter=;|hint=Select all personnel involved}}}
+{{{field|protocol_involved|label=Protocol Involved|input type=checkboxes|values from category=Protocol|delimiter=;|hint=Select protocols involved}}}
+{{{field|description|mandatory|label=Description|input type=textarea|rows=5|hint=Detailed description of the incident}}}
+{{{field|resolution|label=Resolution|input type=textarea|rows=5|hint=How the incident was resolved}}}
+{{{field|follow_up_actions|label=Follow-up Actions|input type=textarea|rows=5|hint=Actions taken or planned}}}
+{{{field|status|mandatory|label=Status|input type=dropdown|values=Open,Under Investigation,Closed|default=Open}}}
+{{{field|reported_by|mandatory|label=Reported By|input type=combobox|values from category=Personnel|autocomplete on property=Personnel Role}}}
+{{{standard input|free text|rows=10|label=Additional Notes}}}
+{{{standard input|summary}}}
+{{{standard input|save}}}
+{{{standard input|preview}}}
+{{{standard input|changes}}}
+{{{standard input|cancel}}}
+</includeonly>

@@ -1,0 +1,20 @@
+<includeonly>{{#set:
+|Has type=Page
+|Allows value=Category:Safety Certification
+|Allows list=true
+}}</includeonly>
+<noinclude>
+This property links to safety certification pages that are required for a protocol. This is a multi-value property.
+
+== Type ==
+Page (links to Safety Certification pages, multi-value)
+
+== Usage ==
+<pre>
+{{#set:
+|Required Certification=[[Safety Certification:Biosafety Level 2]]
+}}
+</pre>
+
+[[Category:Property]]
+</noinclude>

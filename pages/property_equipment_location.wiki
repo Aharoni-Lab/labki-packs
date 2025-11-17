@@ -1,0 +1,18 @@
+<includeonly>{{#set:
+|Has type=String
+}}</includeonly>
+<noinclude>
+This property stores the physical location of equipment.
+
+== Type ==
+String
+
+== Usage ==
+<pre>
+{{#set:
+|Equipment Location=Room 201
+}}
+</pre>
+
+[[Category:Property]]
+</noinclude>

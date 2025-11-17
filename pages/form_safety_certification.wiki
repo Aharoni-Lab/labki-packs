@@ -1,0 +1,25 @@
+<noinclude>
+This is the "Safety Certification" form. To create a page with this form, enter the page name below;
+if a page with that name already exists, you will be editing that page.
+
+{{#forminput:form=Safety Certification|size=50|button text=Create or edit safety certification}}
+</noinclude>
+<includeonly>
+{{{for template|Safety Certification}}}
+{{{field|name|mandatory|label=Certification Name|input type=text|size=80}}}
+{{{field|type|mandatory|label=Certification Type|input type=dropdown|values=Biosafety,Radiation Safety,Chemical Safety,Fire Safety,Electrical Safety,Other}}}
+{{{field|issuing_body|mandatory|label=Issuing Body|input type=text|size=80|hint=Organization that issued the certification}}}
+{{{field|issue_date|mandatory|label=Issue Date|input type=date}}}
+{{{field|expiry_date|mandatory|label=Expiry Date|input type=date}}}
+{{{field|validity_period|label=Validity Period|input type=text|size=30|hint=e.g., 2 years, 1 year}}}
+{{{field|required_for_equipment|label=Required For Equipment|input type=checkboxes|values from category=Equipment|delimiter=;|hint=Select equipment that requires this certification}}}
+{{{field|required_for_protocol|label=Required For Protocol|input type=checkboxes|values from category=Protocol|delimiter=;|hint=Select protocols that require this certification}}}
+{{{field|personnel_with_certification|label=Personnel with Certification|input type=checkboxes|values from category=Personnel|delimiter=;|hint=Select personnel who hold this certification}}}
+{{{field|status|mandatory|label=Status|input type=dropdown|values=Active,Expired,Revoked|default=Active}}}
+{{{standard input|free text|rows=10|label=Additional Notes}}}
+{{{standard input|summary}}}
+{{{standard input|save}}}
+{{{standard input|preview}}}
+{{{standard input|changes}}}
+{{{standard input|cancel}}}
+</includeonly>

@@ -1,0 +1,119 @@
+= Safety Dashboard =
+
+This page provides an overview of safety incidents and certifications in the lab, demonstrating interconnections between safety, equipment, personnel, and protocols.
+
+== Recent Incidents (Last 90 Days) ==
+
+{{#ask:
+[[Category:Safety Incident]]
+[[Incident Date::>{{#time:Y-m-d|-90 days}}]]
+|?Incident Date
+|?Incident Type
+|?Incident Severity
+|?Incident Equipment
+|?Incident Personnel
+|?Incident Protocol
+|format=table
+|link=all
+|headers=plain
+|mainlabel=Incident
+|order=DESC
+|sort=Incident Date
+|limit=50
+}}
+
+== Incidents by Equipment ==
+
+This shows which equipment has been involved in safety incidents:
+
+{{#ask:
+[[Category:Safety Incident]]
+|?Incident Equipment
+|?Incident Date
+|?Incident Severity
+|format=table
+|link=all
+|headers=plain
+|mainlabel=Incident
+|order=DESC
+|sort=Incident Date
+|limit=50
+}}
+
+== Incidents by Protocol ==
+
+This shows which protocols have been involved in safety incidents:
+
+{{#ask:
+[[Category:Safety Incident]]
+|?Incident Protocol
+|?Incident Date
+|?Incident Severity
+|format=table
+|link=all
+|headers=plain
+|mainlabel=Incident
+|order=DESC
+|sort=Incident Date
+|limit=50
+}}
+
+== Expiring Certifications (Next 90 Days) ==
+
+Certifications that will expire within the next 90 days:
+
+{{#ask:
+[[Category:Safety Certification]]
+[[Status::Active]]
+[[Certification Expiry::>{{#time:Y-m-d}}]]
+[[Certification Expiry::<{{#time:Y-m-d|+90 days}}]]
+|?Certification Type
+|?Certification Expiry
+|?Required For Equipment
+|format=table
+|link=all
+|headers=plain
+|mainlabel=Certification
+|order=ASC
+|sort=Certification Expiry
+}}
+
+== All Active Certifications ==
+
+{{#ask:
+[[Category:Safety Certification]]
+[[Status::Active]]
+|?Certification Type
+|?Certification Expiry
+|?Required For Equipment
+|format=table
+|link=all
+|headers=plain
+|mainlabel=Certification
+|order=ASC
+|sort=Certification Type
+|limit=100
+}}
+
+== Incidents by Severity ==
+
+{{#ask:
+[[Category:Safety Incident]]
+|?Incident Severity
+|?Incident Date
+|?Incident Type
+|format=table
+|link=all
+|headers=plain
+|mainlabel=Incident
+|order=DESC
+|sort=Incident Date
+|limit=100
+}}
+
+== See Also ==
+* [[Compliance Status]]
+* [[Category:Safety Incident]]
+* [[Category:Safety Certification]]
+
+[[Category:Lab Content]]

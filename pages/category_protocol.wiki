@@ -1,0 +1,10 @@
+This category contains all protocol and SOP pages in the lab.
+
+== Subcategories ==
+* [[Category:Protocol by Type]]
+
+== See Also ==
+* [[Protocol Index]]
+* [[Protocol by Equipment]]
+
+[[Category:Lab Content]]

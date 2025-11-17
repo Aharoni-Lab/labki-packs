@@ -1,0 +1,18 @@
+<includeonly>{{#set:
+|Has type=String
+}}</includeonly>
+<noinclude>
+This property stores the email address of personnel.
+
+== Type ==
+String
+
+== Usage ==
+<pre>
+{{#set:
+|Personnel Email=jane.smith@lab.edu
+}}
+</pre>
+
+[[Category:Property]]
+</noinclude>

@@ -1,0 +1,19 @@
+<includeonly>{{#set:
+|Has type=Date
+|Allows value=Date
+}}</includeonly>
+<noinclude>
+This property stores the next scheduled calibration date for equipment.
+
+== Type ==
+Date
+
+== Usage ==
+<pre>
+{{#set:
+|Next Calibration Date=2025-07-10
+}}
+</pre>
+
+[[Category:Property]]
+</noinclude>

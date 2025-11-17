@@ -1,0 +1,10 @@
+This category contains all personnel pages in the lab.
+
+== Subcategories ==
+* [[Category:Personnel by Role]]
+
+== See Also ==
+* [[Personnel Directory]]
+* [[Personnel Training Matrix]]
+
+[[Category:Lab Content]]

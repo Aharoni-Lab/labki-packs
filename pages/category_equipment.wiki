@@ -1,0 +1,10 @@
+This category contains all equipment pages in the lab.
+
+== Subcategories ==
+* [[Category:Equipment by Type]]
+
+== See Also ==
+* [[Equipment Dashboard]]
+* [[Equipment Maintenance Schedule]]
+
+[[Category:Lab Content]]
