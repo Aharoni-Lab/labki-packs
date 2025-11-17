@@ -266,7 +266,7 @@ packs:
     depends_on:
       - core-infrastructure
   safety-compliance:
-    description: Track safety incidents, compliance checks, certifications, and link to equipment, protocols, and personnel
+    description: Trackk safety incidents, compliance checks, certifications, and link to equipment, protocols, and personnel
     version: 1.0.0
     pages:
       - Template:Safety Incident
