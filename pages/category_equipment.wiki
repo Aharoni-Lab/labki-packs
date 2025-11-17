@@ -1,3 +1,5 @@
+<span style="display:none">{{#default_form:Equipment}}</span>
+
 This category contains all equipment pages in the lab.
 
 == Subcategories ==

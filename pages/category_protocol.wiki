@@ -1,3 +1,5 @@
+<span style="display:none">{{#default_form:Protocol}}</span>
+
 This category contains all protocol and SOP pages in the lab.
 
 == Subcategories ==

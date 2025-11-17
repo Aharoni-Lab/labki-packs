@@ -1,3 +1,5 @@
+<span style="display:none">{{#default_form:Safety Incident}}</span>
+
 This category contains all safety incident reports in the lab.
 
 == See Also ==
