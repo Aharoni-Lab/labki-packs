@@ -1,0 +1,27 @@
+<includeonly>{{#set:
+|Has type=String
+|Allows value=Microscope,Centrifuge,Incubator,Autoclave,Spectrophotometer,Other
+}}</includeonly>
+<noinclude>
+This property stores the type of equipment.
+
+== Type ==
+String
+
+== Allowed Values ==
+* Microscope
+* Centrifuge
+* Incubator
+* Autoclave
+* Spectrophotometer
+* Other
+
+== Usage ==
+<pre>
+{{#set:
+|Equipment Type=Microscope
+}}
+</pre>
+
+[[Category:Property]]
+</noinclude>

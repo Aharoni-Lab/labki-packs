@@ -1,0 +1,52 @@
+<noinclude>
+This is the "Safety Certification" form.
+
+To create a page with this form, enter the page name below;
+if a page with that name already exists, you will be sent to a form to edit that page.
+
+{{#forminput:form=Safety Certification|autocomplete on category=Safety Certification}}
+</noinclude>
+<includeonly>
+<div id="wikiPreview" style="display: none; padding-bottom: 25px; margin-bottom: 25px; border-bottom: 1px solid #AAAAAA;"></div>
+
+{{{for template|Safety Certification}}}
+
+{| class="formtable"
+|-
+! Certification Name:
+| {{{field|name|mandatory|input type=text|size=80}}}
+|-
+! Certification Type:
+| {{{field|type|mandatory|input type=dropdown|values=Biosafety,Radiation Safety,Chemical Safety,Fire Safety,Electrical Safety,Other}}}
+|-
+! Issuing Body:
+| {{{field|issuing_body|mandatory|input type=text|size=80}}}
+|-
+! Issue Date:
+| {{{field|issue_date|mandatory|input type=date}}}
+|-
+! Expiry Date:
+| {{{field|expiry_date|mandatory|input type=date}}}
+|-
+! Validity Period:
+| {{{field|validity_period|input type=text|size=30}}}
+|-
+! Required For Equipment:
+| {{{field|required_for_equipment|input type=checkboxes|values from category=Equipment|delimiter=;}}}
+|-
+! Required For Protocol:
+| {{{field|required_for_protocol|input type=checkboxes|values from category=Protocol|delimiter=;}}}
+|-
+! Personnel with Certification:
+| {{{field|personnel_with_certification|input type=checkboxes|values from category=Personnel|delimiter=;}}}
+|-
+! Status:
+| {{{field|status|mandatory|input type=dropdown|values=Active,Expired,Revoked|default=Active}}}
+|}
+
+{{{end template}}}
+
+'''Free text:'''
+
+{{{standard input|free text|rows=10}}}
+</includeonly>

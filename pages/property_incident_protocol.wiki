@@ -1,0 +1,20 @@
+<includeonly>{{#set:
+|Has type=Page
+|Allows value=Category:Protocol
+|Allows list=true
+}}</includeonly>
+<noinclude>
+This property links to protocol pages involved in a safety incident. This is a multi-value property.
+
+== Type ==
+Page (links to Protocol pages, multi-value)
+
+== Usage ==
+<pre>
+{{#set:
+|Incident Protocol=[[Protocol:Chemical Handling]]
+}}
+</pre>
+
+[[Category:Property]]
+</noinclude>

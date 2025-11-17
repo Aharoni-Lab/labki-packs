@@ -1,0 +1,52 @@
+<noinclude>
+This is the "Lab Room" form.
+
+To create a page with this form, enter the page name below;
+if a page with that name already exists, you will be sent to a form to edit that page.
+
+{{#forminput:form=Lab Room|autocomplete on category=Lab Room}}
+</noinclude>
+<includeonly>
+<div id="wikiPreview" style="display: none; padding-bottom: 25px; margin-bottom: 25px; border-bottom: 1px solid #AAAAAA;"></div>
+
+{{{for template|Lab Room}}}
+
+{| class="formtable"
+|-
+! Room Name:
+| {{{field|name|mandatory|input type=text|size=50}}}
+|-
+! Room Number:
+| {{{field|room_number|mandatory|input type=text|size=20}}}
+|-
+! Building:
+| {{{field|building|input type=text|size=50}}}
+|-
+! Floor:
+| {{{field|floor|input type=number|size=10}}}
+|-
+! Capacity:
+| {{{field|capacity|input type=number|size=10}}}
+|-
+! Manager:
+| {{{field|manager|input type=combobox|values from category=Personnel|autocomplete on property=Personnel Role}}}
+|-
+! Description:
+| {{{field|description|input type=textarea|rows=5}}}
+|-
+! Status:
+| {{{field|status|mandatory|input type=dropdown|values=Active,Inactive,Under Renovation|default=Active}}}
+|-
+! Created Date:
+| {{{field|created_date|input type=date}}}
+|-
+! Last Updated:
+| {{{field|last_updated|input type=date}}}
+|}
+
+{{{end template}}}
+
+'''Free text:'''
+
+{{{standard input|free text|rows=10}}}
+</includeonly>

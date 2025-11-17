@@ -1,0 +1,20 @@
+<includeonly>{{#set:
+|Has type=Page
+|Allows value=Category:Equipment
+|Allows list=true
+}}</includeonly>
+<noinclude>
+This property links to equipment pages that personnel are authorized to use. This is a multi-value property.
+
+== Type ==
+Page (links to Equipment pages, multi-value)
+
+== Usage ==
+<pre>
+{{#set:
+|Equipment Authorization=[[Equipment:Confocal Microscope]]; [[Equipment:Centrifuge]]
+}}
+</pre>
+
+[[Category:Property]]
+</noinclude>

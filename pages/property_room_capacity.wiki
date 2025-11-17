@@ -1,0 +1,19 @@
+<includeonly>{{#set:
+|Has type=Number
+|Allows value=Number
+}}</includeonly>
+<noinclude>
+This property stores the maximum occupancy capacity of a room.
+
+== Type ==
+Number
+
+== Usage ==
+<pre>
+{{#set:
+|Room Capacity=10
+}}
+</pre>
+
+[[Category:Property]]
+</noinclude>

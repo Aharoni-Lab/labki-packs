@@ -1,0 +1,25 @@
+<includeonly>{{#set:
+|Has type=String
+|Allows value=Minor,Moderate,Major,Critical
+}}</includeonly>
+<noinclude>
+This property stores the severity level of a safety incident.
+
+== Type ==
+String
+
+== Allowed Values ==
+* Minor
+* Moderate
+* Major
+* Critical
+
+== Usage ==
+<pre>
+{{#set:
+|Incident Severity=Minor
+}}
+</pre>
+
+[[Category:Property]]
+</noinclude>

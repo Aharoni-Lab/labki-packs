@@ -1,0 +1,5 @@
+This is the base category for all lab content pages.
+
+Pages in this category are part of the lab operations content system.
+
+[[Category:Category]]

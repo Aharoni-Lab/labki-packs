@@ -1,0 +1,49 @@
+<noinclude>
+This is the "Personnel" form.
+
+To create a page with this form, enter the page name below;
+if a page with that name already exists, you will be sent to a form to edit that page.
+
+{{#forminput:form=Personnel|autocomplete on category=Personnel}}
+</noinclude>
+<includeonly>
+<div id="wikiPreview" style="display: none; padding-bottom: 25px; margin-bottom: 25px; border-bottom: 1px solid #AAAAAA;"></div>
+
+{{{for template|Personnel}}}
+
+{| class="formtable"
+|-
+! Name:
+| {{{field|name|mandatory|input type=text|size=50}}}
+|-
+! Role:
+| {{{field|role|mandatory|input type=dropdown|values=PI,Postdoc,Graduate Student,Undergraduate Student,Research Assistant,Technician,Other}}}
+|-
+! Email:
+| {{{field|email|mandatory|input type=email|size=50}}}
+|-
+! Start Date:
+| {{{field|start_date|mandatory|input type=date}}}
+|-
+! Status:
+| {{{field|status|mandatory|input type=dropdown|values=Active,Inactive,Alumni|default=Active}}}
+|-
+! Supervisor:
+| {{{field|supervisor|input type=combobox|values from category=Personnel|autocomplete on property=Personnel Role}}}
+|-
+! Certifications:
+| {{{field|certifications|input type=checkboxes|values from category=Safety Certification|delimiter=;}}}
+|-
+! Equipment Authorizations:
+| {{{field|equipment_authorizations|input type=checkboxes|values from category=Equipment|delimiter=;}}}
+|-
+! Training Records:
+| {{{field|training_records|input type=textarea|rows=5}}}
+|}
+
+{{{end template}}}
+
+'''Free text:'''
+
+{{{standard input|free text|rows=10}}}
+</includeonly>

@@ -1,0 +1,50 @@
+<noinclude>
+{{#template_params:title|date (property=Incident Date)|type|severity (property=Incident Severity)|location|equipment_involved (list;property=Incident Equipment)|personnel_involved (list;property=Incident Personnel)|protocol_involved (list;property=Incident Protocol)|description|resolution|follow_up_actions|status (property=Status)|reported_by (property=Reported By)}}
+</noinclude>
+<includeonly>
+{{#set:Incident Date={{{date|}}}|Incident Severity={{{severity|}}}|Incident Equipment={{{equipment_involved|}}}|Incident Personnel={{{personnel_involved|}}}|Incident Protocol={{{protocol_involved|}}}|Status={{{status|Open}}}|Created Date={{{date|}}}|Last Updated={{{date|}}}|Reported By={{{reported_by|}}}}}
+
+{| class="wikitable"
+|-
+! Incident Title
+| {{{title|}}}
+|-
+! Date
+| [[Incident Date::{{{date|}}}]]
+|-
+! Type
+| {{{type|}}}
+|-
+! Severity
+| [[Incident Severity::{{{severity|}}}]]
+|-
+! Location
+| {{{location|}}}
+|-
+! Equipment Involved
+| {{#arraymap:{{{equipment_involved|}}}|;|x|[[Incident Equipment::x]]}}
+|-
+! Personnel Involved
+| {{#arraymap:{{{personnel_involved|}}}|;|x|[[Incident Personnel::x]]}}
+|-
+! Protocol Involved
+| {{#arraymap:{{{protocol_involved|}}}|;|x|[[Incident Protocol::x]]}}
+|-
+! Description
+| {{{description|}}}
+|-
+! Resolution
+| {{{resolution|}}}
+|-
+! Follow-up Actions
+| {{{follow_up_actions|}}}
+|-
+! Status
+| [[Status::{{{status|Open}}}]]
+|-
+! Reported By
+| [[Reported By::{{{reported_by|}}}]]
+|}
+
+[[Category:Safety Incident]]
+</includeonly>

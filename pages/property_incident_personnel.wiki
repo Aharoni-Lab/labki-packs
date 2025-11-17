@@ -1,0 +1,20 @@
+<includeonly>{{#set:
+|Has type=Page
+|Allows value=Category:Personnel
+|Allows list=true
+}}</includeonly>
+<noinclude>
+This property links to personnel pages involved in a safety incident. This is a multi-value property.
+
+== Type ==
+Page (links to Personnel pages, multi-value)
+
+== Usage ==
+<pre>
+{{#set:
+|Incident Personnel=[[Personnel:Jane Smith]]
+}}
+</pre>
+
+[[Category:Property]]
+</noinclude>

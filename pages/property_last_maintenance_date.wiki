@@ -1,0 +1,19 @@
+<includeonly>{{#set:
+|Has type=Date
+|Allows value=Date
+}}</includeonly>
+<noinclude>
+This property stores the date of the last maintenance performed on equipment.
+
+== Type ==
+Date
+
+== Usage ==
+<pre>
+{{#set:
+|Last Maintenance Date=2025-01-10
+}}
+</pre>
+
+[[Category:Property]]
+</noinclude>

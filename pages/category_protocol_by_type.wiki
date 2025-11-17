@@ -1,0 +1,15 @@
+This category contains protocols organized by type.
+
+== Protocol Types ==
+* Safety protocols
+* Experimental protocols
+* Maintenance protocols
+* Quality control protocols
+* Data analysis protocols
+* Other protocols
+
+== See Also ==
+* [[Category:Protocol]]
+* [[Protocol Index]]
+
+[[Category:Protocol]]

@@ -1,0 +1,10 @@
+<span style="display:none">{{#default_form:Safety Certification}}</span>
+
+This category contains all safety certifications in the lab.
+
+== See Also ==
+* [[Safety Dashboard]]
+* [[Compliance Status]]
+* [[Category:Safety Incident]]
+
+[[Category:Lab Content]]

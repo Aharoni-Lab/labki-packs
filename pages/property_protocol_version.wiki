@@ -1,0 +1,18 @@
+<includeonly>{{#set:
+|Has type=String
+}}</includeonly>
+<noinclude>
+This property stores the version number of a protocol.
+
+== Type ==
+String
+
+== Usage ==
+<pre>
+{{#set:
+|Protocol Version=2.1
+}}
+</pre>
+
+[[Category:Property]]
+</noinclude>

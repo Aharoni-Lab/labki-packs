@@ -1,0 +1,60 @@
+= Protocols by Equipment =
+
+This page shows which protocols use each piece of equipment, demonstrating the interconnection between equipment and protocols.
+
+== Equipment and Their Required Protocols ==
+
+For each piece of equipment, this query shows all protocols that require it:
+
+{{#ask:
+[[Category:Equipment]]
+[[Status::Active]]
+|?Required Equipment
+|format=broadtable
+|link=all
+|headers=plain
+|mainlabel=Equipment
+|order=ASC
+|sort=Equipment Type
+}}
+
+== Protocols and Their Equipment Requirements ==
+
+For each protocol, this query shows all equipment it requires:
+
+{{#ask:
+[[Category:Protocol]]
+[[Status::Active]]
+|?Required Equipment
+|?Protocol Version
+|format=table
+|link=all
+|headers=plain
+|mainlabel=Protocol
+|order=ASC
+|sort=Protocol
+}}
+
+== Equipment Usage Summary ==
+
+This shows how many protocols use each piece of equipment:
+
+{{#ask:
+[[Category:Equipment]]
+[[Status::Active]]
+|?Required Equipment
+|format=table
+|link=all
+|headers=plain
+|mainlabel=Equipment
+|order=DESC
+|sort=Required Equipment
+}}
+
+== See Also ==
+* [[Protocol Index]]
+* [[Equipment Dashboard]]
+* [[Category:Equipment]]
+* [[Category:Protocol]]
+
+[[Category:Lab Content]]

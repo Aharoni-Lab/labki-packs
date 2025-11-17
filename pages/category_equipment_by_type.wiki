@@ -1,0 +1,15 @@
+This category contains equipment organized by type.
+
+== Equipment Types ==
+* Microscopes
+* Centrifuges
+* Incubators
+* Autoclaves
+* Spectrophotometers
+* Other equipment
+
+== See Also ==
+* [[Category:Equipment]]
+* [[Equipment Dashboard]]
+
+[[Category:Equipment]]

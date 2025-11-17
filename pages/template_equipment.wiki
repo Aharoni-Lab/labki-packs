@@ -1,0 +1,47 @@
+<noinclude>
+{{#template_params:name|type (property=Equipment Type)|manufacturer|model|serial_number|location (property=Equipment Location)|status (property=Status)|owner (property=Owner)|purchase_date (property=Created Date)|cost (property=Equipment Cost)|last_maintenance (property=Last Maintenance Date)|next_calibration (property=Next Calibration Date)}}
+</noinclude>
+<includeonly>
+{{#set:Equipment Type={{{type|}}}|Equipment Location={{{location|}}}|Last Maintenance Date={{{last_maintenance|}}}|Next Calibration Date={{{next_calibration|}}}|Equipment Cost={{{cost|}}}|Status={{{status|Active}}}|Owner={{{owner|}}}|Created Date={{{purchase_date|}}}|Last Updated={{{last_maintenance|}}}}}
+
+{| class="wikitable"
+|-
+! Equipment Name
+| {{{name|}}}
+|-
+! Type
+| [[Equipment Type::{{{type|}}}]]
+|-
+! Manufacturer
+| {{{manufacturer|}}}
+|-
+! Model
+| {{{model|}}}
+|-
+! Serial Number
+| {{{serial_number|}}}
+|-
+! Location
+| [[Equipment Location::{{{location|}}}]]
+|-
+! Status
+| [[Status::{{{status|Active}}}]]
+|-
+! Owner
+| [[Owner::{{{owner|}}}]]
+|-
+! Purchase Date
+| [[Created Date::{{{purchase_date|}}}]]
+|-
+! Cost
+| [[Equipment Cost::{{{cost|}}}]]
+|-
+! Last Maintenance Date
+| [[Last Maintenance Date::{{{last_maintenance|}}}]]
+|-
+! Next Calibration Date
+| [[Next Calibration Date::{{{next_calibration|}}}]]
+|}
+
+[[Category:Equipment]]
+</includeonly>

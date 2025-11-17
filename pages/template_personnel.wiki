@@ -1,0 +1,38 @@
+<noinclude>
+{{#template_params:name|role (property=Personnel Role)|email (property=Personnel Email)|start_date (property=Start Date)|status (property=Status)|supervisor (property=Supervisor)|certifications (list;property=Certification)|equipment_authorizations (list;property=Equipment Authorization)|training_records}}
+</noinclude>
+<includeonly>
+{{#set:Personnel Role={{{role|}}}|Personnel Email={{{email|}}}|Start Date={{{start_date|}}}|Supervisor={{{supervisor|}}}|Certification={{{certifications|}}}|Equipment Authorization={{{equipment_authorizations|}}}|Status={{{status|Active}}}|Created Date={{{start_date|}}}|Last Updated={{{start_date|}}}}}
+
+{| class="wikitable"
+|-
+! Name
+| {{{name|}}}
+|-
+! Role
+| [[Personnel Role::{{{role|}}}]]
+|-
+! Email
+| [[Personnel Email::{{{email|}}}]]
+|-
+! Start Date
+| [[Start Date::{{{start_date|}}}]]
+|-
+! Status
+| [[Status::{{{status|Active}}}]]
+|-
+! Supervisor
+| [[Supervisor::{{{supervisor|}}}]]
+|-
+! Certifications
+| {{#arraymap:{{{certifications|}}}|;|x|[[Certification::x]]}}
+|-
+! Equipment Authorizations
+| {{#arraymap:{{{equipment_authorizations|}}}|;|x|[[Equipment Authorization::x]]}}
+|-
+! Training Records
+| {{{training_records|}}}
+|}
+
+[[Category:Personnel]]
+</includeonly>

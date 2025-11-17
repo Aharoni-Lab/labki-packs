@@ -1,0 +1,28 @@
+<includeonly>{{#set:
+|Has type=String
+|Allows value=PI,Postdoc,Graduate Student,Undergraduate Student,Research Assistant,Technician,Other
+}}</includeonly>
+<noinclude>
+This property stores the role of personnel in the lab.
+
+== Type ==
+String
+
+== Allowed Values ==
+* PI
+* Postdoc
+* Graduate Student
+* Undergraduate Student
+* Research Assistant
+* Technician
+* Other
+
+== Usage ==
+<pre>
+{{#set:
+|Personnel Role=Postdoc
+}}
+</pre>
+
+[[Category:Property]]
+</noinclude>

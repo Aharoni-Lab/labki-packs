@@ -1,0 +1,19 @@
+<includeonly>{{#set:
+|Has type=Date
+|Allows value=Date
+}}</includeonly>
+<noinclude>
+This property stores the date when a safety incident occurred.
+
+== Type ==
+Date
+
+== Usage ==
+<pre>
+{{#set:
+|Incident Date=2025-01-15
+}}
+</pre>
+
+[[Category:Property]]
+</noinclude>

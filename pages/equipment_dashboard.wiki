@@ -1,0 +1,93 @@
+= Equipment Dashboard =
+
+This page provides an overview of all equipment in the lab, including maintenance schedules and calibration status.
+
+== Equipment Needing Maintenance ==
+
+Equipment with maintenance due within the next 30 days:
+
+{{#ask:
+[[Category:Equipment]]
+[[Status::Active]]
+|?Last Maintenance Date
+|?Next Calibration Date
+|?Equipment Location
+|?Owner
+|format=table
+|link=all
+|headers=plain
+|mainlabel=Equipment
+|order=ASC
+|sort=Last Maintenance Date
+|limit=50
+}}
+
+== Overdue Calibrations ==
+
+Equipment with calibration dates that have passed:
+
+{{#ask:
+[[Category:Equipment]]
+[[Status::Active]]
+[[Next Calibration Date::<{{#time:Y-m-d}}]]
+|?Next Calibration Date
+|?Equipment Location
+|?Owner
+|format=table
+|link=all
+|headers=plain
+|mainlabel=Equipment
+|order=ASC
+|sort=Next Calibration Date
+}}
+
+== Equipment by Location ==
+
+{{#ask:
+[[Category:Equipment]]
+[[Status::Active]]
+|?Equipment Location
+|?Equipment Type
+|format=table
+|link=all
+|headers=plain
+|mainlabel=Equipment
+|order=ASC
+|sort=Equipment Location
+}}
+
+== Equipment by Type ==
+
+{{#ask:
+[[Category:Equipment]]
+[[Status::Active]]
+|?Equipment Type
+|?Equipment Location
+|format=table
+|link=all
+|headers=plain
+|mainlabel=Equipment
+|order=ASC
+|sort=Equipment Type
+}}
+
+== All Equipment ==
+
+{{#ask:
+[[Category:Equipment]]
+|?Equipment Type
+|?Equipment Location
+|?Status
+|?Owner
+|?Last Maintenance Date
+|?Next Calibration Date
+|format=table
+|link=all
+|headers=plain
+|mainlabel=Equipment
+|order=ASC
+|sort=Equipment Type
+|limit=100
+}}
+
+[[Category:Lab Content]]

@@ -1,0 +1,41 @@
+<noinclude>
+{{#template_params:name|room_number (property=Room Number)|building (property=Building)|floor (property=Floor)|capacity (property=Room Capacity)|manager (property=Owner)|description|status (property=Status)|created_date (property=Created Date)|last_updated (property=Last Updated)}}
+</noinclude>
+<includeonly>
+{{#set:Room Number={{{room_number|}}}|Building={{{building|}}}|Floor={{{floor|}}}|Room Capacity={{{capacity|}}}|Status={{{status|Active}}}|Owner={{{manager|}}}|Created Date={{{created_date|}}}|Last Updated={{{last_updated|}}}}}
+
+{| class="wikitable"
+|-
+! Room Name
+| {{{name|}}}
+|-
+! Room Number
+| [[Room Number::{{{room_number|}}}]]
+|-
+! Building
+| [[Building::{{{building|}}}]]
+|-
+! Floor
+| [[Floor::{{{floor|}}}]]
+|-
+! Capacity
+| [[Room Capacity::{{{capacity|}}}]]
+|-
+! Manager
+| [[Owner::{{{manager|}}}]]
+|-
+! Description
+| {{{description|}}}
+|-
+! Status
+| [[Status::{{{status|Active}}}]]
+|-
+! Created Date
+| [[Created Date::{{{created_date|}}}]]
+|-
+! Last Updated
+| [[Last Updated::{{{last_updated|}}}]]
+|}
+
+[[Category:Lab Room]]
+</includeonly>

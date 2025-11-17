@@ -1,0 +1,16 @@
+This category contains personnel organized by role.
+
+== Personnel Roles ==
+* Principal Investigator (PI)
+* Postdoctoral Researchers
+* Graduate Students
+* Undergraduate Students
+* Research Assistants
+* Technicians
+* Other roles
+
+== See Also ==
+* [[Category:Personnel]]
+* [[Personnel Directory]]
+
+[[Category:Personnel]]

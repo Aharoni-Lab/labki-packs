@@ -1,0 +1,44 @@
+<noinclude>
+{{#template_params:title|category|version (property=Protocol Version)|author (property=Protocol Author)|created_date (property=Created Date)|last_review_date (property=Last Review Date)|next_review_date|status (property=Status)|required_equipment (list;property=Required Equipment)|required_certifications (list;property=Required Certification)|related_protocols}}
+</noinclude>
+<includeonly>
+{{#set:Protocol Version={{{version|1.0}}}|Protocol Author={{{author|}}}|Last Review Date={{{last_review_date|}}}|Required Equipment={{{required_equipment|}}}|Required Certification={{{required_certifications|}}}|Status={{{status|Active}}}|Created Date={{{created_date|}}}|Last Updated={{{last_review_date|}}}}}
+
+{| class="wikitable"
+|-
+! Protocol Title
+| {{{title|}}}
+|-
+! Category
+| {{{category|}}}
+|-
+! Version
+| [[Protocol Version::{{{version|1.0}}}]]
+|-
+! Author
+| [[Protocol Author::{{{author|}}}]]
+|-
+! Created Date
+| [[Created Date::{{{created_date|}}}]]
+|-
+! Last Review Date
+| [[Last Review Date::{{{last_review_date|}}}]]
+|-
+! Next Review Date
+| {{{next_review_date|}}}
+|-
+! Status
+| [[Status::{{{status|Active}}}]]
+|-
+! Required Equipment
+| {{#arraymap:{{{required_equipment|}}}|;|x|[[Required Equipment::x]]}}
+|-
+! Required Certifications
+| {{#arraymap:{{{required_certifications|}}}|;|x|[[Required Certification::x]]}}
+|-
+! Related Protocols
+| {{#arraymap:{{{related_protocols|}}}|;|x|[[x]]}}
+|}
+
+[[Category:Protocol]]
+</includeonly>

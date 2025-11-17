@@ -1,0 +1,18 @@
+<includeonly>{{#set:
+|Has type=String
+}}</includeonly>
+<noinclude>
+This property stores the building name.
+
+== Type ==
+String
+
+== Usage ==
+<pre>
+{{#set:
+|Building=Science Building
+}}
+</pre>
+
+[[Category:Property]]
+</noinclude>

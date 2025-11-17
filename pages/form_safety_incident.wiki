@@ -1,0 +1,61 @@
+<noinclude>
+This is the "Safety Incident" form.
+
+To create a page with this form, enter the page name below;
+if a page with that name already exists, you will be sent to a form to edit that page.
+
+{{#forminput:form=Safety Incident|autocomplete on category=Safety Incident}}
+</noinclude>
+<includeonly>
+<div id="wikiPreview" style="display: none; padding-bottom: 25px; margin-bottom: 25px; border-bottom: 1px solid #AAAAAA;"></div>
+
+{{{for template|Safety Incident}}}
+
+{| class="formtable"
+|-
+! Incident Title:
+| {{{field|title|mandatory|input type=text|size=80}}}
+|-
+! Incident Date:
+| {{{field|date|mandatory|input type=date}}}
+|-
+! Incident Type:
+| {{{field|type|mandatory|input type=dropdown|values=Chemical Spill,Fire,Injury,Equipment Failure,Electrical,Other}}}
+|-
+! Severity:
+| {{{field|severity|mandatory|input type=dropdown|values=Minor,Moderate,Major,Critical}}}
+|-
+! Location:
+| {{{field|location|mandatory|input type=combobox|values from category=Lab Room|autocomplete on property=Room Number}}}
+|-
+! Equipment Involved:
+| {{{field|equipment_involved|input type=checkboxes|values from category=Equipment|delimiter=;}}}
+|-
+! Personnel Involved:
+| {{{field|personnel_involved|input type=checkboxes|values from category=Personnel|delimiter=;}}}
+|-
+! Protocol Involved:
+| {{{field|protocol_involved|input type=checkboxes|values from category=Protocol|delimiter=;}}}
+|-
+! Description:
+| {{{field|description|mandatory|input type=textarea|rows=5}}}
+|-
+! Resolution:
+| {{{field|resolution|input type=textarea|rows=5}}}
+|-
+! Follow-up Actions:
+| {{{field|follow_up_actions|input type=textarea|rows=5}}}
+|-
+! Status:
+| {{{field|status|mandatory|input type=dropdown|values=Open,Under Investigation,Closed|default=Open}}}
+|-
+! Reported By:
+| {{{field|reported_by|mandatory|input type=combobox|values from category=Personnel|autocomplete on property=Personnel Role}}}
+|}
+
+{{{end template}}}
+
+'''Free text:'''
+
+{{{standard input|free text|rows=10}}}
+</includeonly>

@@ -1,0 +1,20 @@
+<includeonly>{{#set:
+|Has type=Date
+|Allows value=Date
+}}</includeonly>
+<noinclude>
+This property stores the creation date for a page.
+
+== Type ==
+Date
+
+== Usage ==
+Use this property to track when a page was created:
+<pre>
+{{#set:
+|Created Date=2025-01-15
+}}
+</pre>
+
+[[Category:Property]]
+</noinclude>

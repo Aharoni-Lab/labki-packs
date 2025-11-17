@@ -1,0 +1,55 @@
+<noinclude>
+This is the "Protocol" form.
+
+To create a page with this form, enter the page name below;
+if a page with that name already exists, you will be sent to a form to edit that page.
+
+{{#forminput:form=Protocol|autocomplete on category=Protocol}}
+</noinclude>
+<includeonly>
+<div id="wikiPreview" style="display: none; padding-bottom: 25px; margin-bottom: 25px; border-bottom: 1px solid #AAAAAA;"></div>
+
+{{{for template|Protocol}}}
+
+{| class="formtable"
+|-
+! Protocol Title:
+| {{{field|title|mandatory|input type=text|size=80}}}
+|-
+! Category:
+| {{{field|category|mandatory|input type=dropdown|values=Safety,Experimental,Maintenance,Quality Control,Data Analysis,Other}}}
+|-
+! Version:
+| {{{field|version|mandatory|input type=text|size=20|default=1.0}}}
+|-
+! Author:
+| {{{field|author|mandatory|input type=combobox|values from category=Personnel|autocomplete on property=Personnel Role}}}
+|-
+! Created Date:
+| {{{field|created_date|mandatory|input type=date}}}
+|-
+! Last Review Date:
+| {{{field|last_review_date|mandatory|input type=date}}}
+|-
+! Next Review Date:
+| {{{field|next_review_date|mandatory|input type=date}}}
+|-
+! Status:
+| {{{field|status|mandatory|input type=dropdown|values=Active,Inactive,Under Review|default=Active}}}
+|-
+! Required Equipment:
+| {{{field|required_equipment|input type=checkboxes|values from category=Equipment|delimiter=;}}}
+|-
+! Required Certifications:
+| {{{field|required_certifications|input type=checkboxes|values from category=Safety Certification|delimiter=;}}}
+|-
+! Related Protocols:
+| {{{field|related_protocols|input type=checkboxes|values from category=Protocol|delimiter=;}}}
+|}
+
+{{{end template}}}
+
+'''Free text:'''
+
+{{{standard input|free text|rows=15}}}
+</includeonly>

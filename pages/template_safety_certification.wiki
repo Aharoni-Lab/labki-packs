@@ -1,0 +1,41 @@
+<noinclude>
+{{#template_params:name|type (property=Certification Type)|issuing_body|issue_date (property=Created Date)|expiry_date (property=Certification Expiry)|validity_period|required_for_equipment (list;property=Required For Equipment)|required_for_protocol|personnel_with_certification|status (property=Status)}}
+</noinclude>
+<includeonly>
+{{#set:Certification Type={{{type|}}}|Certification Expiry={{{expiry_date|}}}|Required For Equipment={{{required_for_equipment|}}}|Status={{{status|Active}}}|Created Date={{{issue_date|}}}|Last Updated={{{expiry_date|}}}}}
+
+{| class="wikitable"
+|-
+! Certification Name
+| {{{name|}}}
+|-
+! Type
+| [[Certification Type::{{{type|}}}]]
+|-
+! Issuing Body
+| {{{issuing_body|}}}
+|-
+! Issue Date
+| [[Created Date::{{{issue_date|}}}]]
+|-
+! Expiry Date
+| [[Certification Expiry::{{{expiry_date|}}}]]
+|-
+! Validity Period
+| {{{validity_period|}}}
+|-
+! Required For Equipment
+| {{#arraymap:{{{required_for_equipment|}}}|;|x|[[Required For Equipment::x]]}}
+|-
+! Required For Protocol
+| {{#arraymap:{{{required_for_protocol|}}}|;|x|[[x]]}}
+|-
+! Personnel with Certification
+| {{#arraymap:{{{personnel_with_certification|}}}|;|x|[[x]]}}
+|-
+! Status
+| [[Status::{{{status|Active}}}]]
+|}
+
+[[Category:Safety Certification]]
+</includeonly>

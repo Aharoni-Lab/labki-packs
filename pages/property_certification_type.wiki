@@ -1,0 +1,27 @@
+<includeonly>{{#set:
+|Has type=String
+|Allows value=Biosafety,Radiation Safety,Chemical Safety,Fire Safety,Electrical Safety,Other
+}}</includeonly>
+<noinclude>
+This property stores the type of safety certification.
+
+== Type ==
+String
+
+== Allowed Values ==
+* Biosafety
+* Radiation Safety
+* Chemical Safety
+* Fire Safety
+* Electrical Safety
+* Other
+
+== Usage ==
+<pre>
+{{#set:
+|Certification Type=Biosafety
+}}
+</pre>
+
+[[Category:Property]]
+</noinclude>

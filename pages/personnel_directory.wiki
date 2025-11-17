@@ -1,0 +1,79 @@
+= Personnel Directory =
+
+This page provides an overview of all personnel in the lab, organized by role and showing certifications and equipment authorizations.
+
+== All Personnel by Role ==
+
+{{#ask:
+[[Category:Personnel]]
+|?Personnel Role
+|?Personnel Email
+|?Start Date
+|?Supervisor
+|?Status
+|format=table
+|link=all
+|headers=plain
+|mainlabel=Personnel
+|order=ASC
+|sort=Personnel Role
+|limit=100
+}}
+
+== Personnel by Equipment Authorization ==
+
+This section shows which personnel are authorized to use each piece of equipment:
+
+{{#ask:
+[[Category:Personnel]]
+[[Status::Active]]
+|?Equipment Authorization
+|?Personnel Role
+|format=table
+|link=all
+|headers=plain
+|mainlabel=Personnel
+|order=ASC
+|sort=Equipment Authorization
+}}
+
+== Personnel with Expiring Certifications ==
+
+Personnel with certifications expiring within the next 90 days:
+
+{{#ask:
+[[Category:Personnel]]
+[[Status::Active]]
+|?Certification
+|?Personnel Role
+|format=table
+|link=all
+|headers=plain
+|mainlabel=Personnel
+|order=ASC
+|sort=Certification
+}}
+
+== Active Personnel ==
+
+{{#ask:
+[[Category:Personnel]]
+[[Status::Active]]
+|?Personnel Role
+|?Personnel Email
+|?Start Date
+|?Supervisor
+|format=table
+|link=all
+|headers=plain
+|mainlabel=Personnel
+|order=ASC
+|sort=Personnel Role
+|limit=100
+}}
+
+== See Also ==
+* [[Personnel Training Matrix]]
+* [[Category:Personnel]]
+
+[[Category:Lab Content]]

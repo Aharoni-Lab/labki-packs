@@ -1,0 +1,19 @@
+<includeonly>{{#set:
+|Has type=Date
+|Allows value=Date
+}}</includeonly>
+<noinclude>
+This property stores the date when a protocol was last reviewed.
+
+== Type ==
+Date
+
+== Usage ==
+<pre>
+{{#set:
+|Last Review Date=2025-01-10
+}}
+</pre>
+
+[[Category:Property]]
+</noinclude>

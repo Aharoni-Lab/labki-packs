@@ -1,0 +1,62 @@
+= Equipment Maintenance Schedule =
+
+This page shows upcoming maintenance and calibration dates for all equipment.
+
+== Upcoming Maintenance (Next 90 Days) ==
+
+{{#ask:
+[[Category:Equipment]]
+[[Status::Active]]
+[[Last Maintenance Date::>{{#expr:{{#time:U}}-7776000}}]]
+|?Last Maintenance Date
+|?Next Calibration Date
+|?Equipment Location
+|?Owner
+|format=calendar
+|link=all
+|headers=plain
+|mainlabel=Equipment
+|order=ASC
+|sort=Last Maintenance Date
+|limit=50
+}}
+
+== Upcoming Calibrations (Next 90 Days) ==
+
+{{#ask:
+[[Category:Equipment]]
+[[Status::Active]]
+[[Next Calibration Date::>{{#time:Y-m-d}}]]
+[[Next Calibration Date::<{{#time:Y-m-d|+90 days}}]]
+|?Next Calibration Date
+|?Equipment Location
+|?Owner
+|format=table
+|link=all
+|headers=plain
+|mainlabel=Equipment
+|order=ASC
+|sort=Next Calibration Date
+}}
+
+== Maintenance History ==
+
+{{#ask:
+[[Category:Equipment]]
+|?Last Maintenance Date
+|?Equipment Type
+|?Equipment Location
+|format=table
+|link=all
+|headers=plain
+|mainlabel=Equipment
+|order=DESC
+|sort=Last Maintenance Date
+|limit=50
+}}
+
+== See Also ==
+* [[Equipment Dashboard]]
+* [[Category:Equipment]]
+
+[[Category:Lab Content]]

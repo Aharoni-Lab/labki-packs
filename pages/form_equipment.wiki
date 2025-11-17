@@ -1,0 +1,58 @@
+<noinclude>
+This is the "Equipment" form.
+
+To create a page with this form, enter the page name below;
+if a page with that name already exists, you will be sent to a form to edit that page.
+
+{{#forminput:form=Equipment|autocomplete on category=Equipment}}
+</noinclude>
+<includeonly>
+<div id="wikiPreview" style="display: none; padding-bottom: 25px; margin-bottom: 25px; border-bottom: 1px solid #AAAAAA;"></div>
+
+{{{for template|Equipment}}}
+
+{| class="formtable"
+|-
+! Equipment Name:
+| {{{field|name|mandatory|input type=text|size=50}}}
+|-
+! Equipment Type:
+| {{{field|type|mandatory|input type=dropdown|values=Microscope,Centrifuge,Incubator,Autoclave,Spectrophotometer,Other}}}
+|-
+! Manufacturer:
+| {{{field|manufacturer|input type=text|size=50}}}
+|-
+! Model:
+| {{{field|model|input type=text|size=50}}}
+|-
+! Serial Number:
+| {{{field|serial_number|input type=text|size=50}}}
+|-
+! Location:
+| {{{field|location|mandatory|input type=combobox|values from category=Lab Room|autocomplete on property=Room Number}}}
+|-
+! Status:
+| {{{field|status|mandatory|input type=dropdown|values=Active,Inactive,Archived|default=Active}}}
+|-
+! Owner:
+| {{{field|owner|input type=combobox|values from category=Personnel|autocomplete on property=Personnel Role}}}
+|-
+! Purchase Date:
+| {{{field|purchase_date|mandatory|input type=date}}}
+|-
+! Cost ($):
+| {{{field|cost|input type=number|size=20}}}
+|-
+! Last Maintenance Date:
+| {{{field|last_maintenance|input type=date}}}
+|-
+! Next Calibration Date:
+| {{{field|next_calibration|input type=date}}}
+|}
+
+{{{end template}}}
+
+'''Free text:'''
+
+{{{standard input|free text|rows=10}}}
+</includeonly>

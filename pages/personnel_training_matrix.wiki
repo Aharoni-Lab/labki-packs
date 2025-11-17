@@ -1,0 +1,80 @@
+= Personnel Training Matrix =
+
+This page shows training status across personnel and equipment, demonstrating the interconnection between personnel, equipment, and certifications.
+
+== Personnel and Their Equipment Authorizations ==
+
+This shows which equipment each person is authorized to use:
+
+{{#ask:
+[[Category:Personnel]]
+[[Status::Active]]
+|?Equipment Authorization
+|?Personnel Role
+|?Certification
+|format=table
+|link=all
+|headers=plain
+|mainlabel=Personnel
+|order=ASC
+|sort=Personnel Role
+|limit=100
+}}
+
+== Equipment and Authorized Personnel ==
+
+This shows which personnel are authorized to use each piece of equipment:
+
+{{#ask:
+[[Category:Equipment]]
+[[Status::Active]]
+|?Equipment Authorization
+|format=broadtable
+|link=all
+|headers=plain
+|mainlabel=Equipment
+|order=ASC
+|sort=Equipment Type
+}}
+
+== Personnel and Their Certifications ==
+
+{{#ask:
+[[Category:Personnel]]
+[[Status::Active]]
+|?Certification
+|?Personnel Role
+|format=table
+|link=all
+|headers=plain
+|mainlabel=Personnel
+|order=ASC
+|sort=Personnel Role
+|limit=100
+}}
+
+== Training Gaps ==
+
+Equipment that requires certifications but personnel may not have them:
+
+{{#ask:
+[[Category:Equipment]]
+[[Status::Active]]
+|?Required Certification
+|?Equipment Authorization
+|format=table
+|link=all
+|headers=plain
+|mainlabel=Equipment
+|order=ASC
+|sort=Equipment Type
+}}
+
+== See Also ==
+* [[Personnel Directory]]
+* [[Equipment Dashboard]]
+* [[Safety Dashboard]]
+* [[Category:Personnel]]
+* [[Category:Equipment]]
+
+[[Category:Lab Content]]
